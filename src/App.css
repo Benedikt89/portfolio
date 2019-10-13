@@ -1,22 +1,87 @@
 .App {
-  text-align: center;
+    text-align: center;
+}
+.homeBanner {
+    background-color: #1f1f20;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0;
+    position: relative;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+.AppHeader {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+.heroBannerContent {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.borRed {
+    border-radius: 5px;
+    border: 2px solid red;
+}
+.dFlex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.alignItemsCenter {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+.jCenter{
+    justify-content: center;
+}
+.vh100{
+    min-height: 100vh;
+}
+.vAlignMid{
+    vertical-align: middle;
 }
 
-.App-logo {
-  height: 40vmin;
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    min-height: 100vh
+}
+.bgBlack {
+    background-color: black;
+}
+.AppLink {
+    color: #09d3ac;
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
 }
 
-.App-link {
-  color: #09d3ac;
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }

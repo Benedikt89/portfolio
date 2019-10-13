@@ -1,0 +1,17 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navButtons > button{
+    background-color: #180a20;
+    color: white;
+    margin: 5px;
+}
