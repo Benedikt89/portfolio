@@ -1,22 +1,25 @@
 
 .banner {
-    background-color: #1f1f20;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding: 0;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    overflow: hidden;
+    composes: banner from './../../App.css';
 }
 .bannerContent {
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-    display: flex;
+    composes: bannerContent from './../../App.css';
+}
+.container {
+    composes: container from './../../App.css';
     justify-content: center;
     align-items: center;
+}
+.containerCol {
+    composes: container from './../../App.css';
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parallaxImg {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

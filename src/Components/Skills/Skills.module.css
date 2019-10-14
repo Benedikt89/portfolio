@@ -1,21 +1,41 @@
 .skillsBanner {
-    background-color: #180a20;
+    composes: banner from './../../App.css';
+}
+.parallaxImg {
+    height: 100%;
     background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
-    padding: 0;
-    position: relative;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    overflow: hidden;
 }
 .skillsContent{
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
+    composes: bannerContent from './../../App.css';
+    flex-direction: column;
+}
+.container {
+    composes: container from './../../App.css';
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    margin: 10px;
+    min-height: min-content;
+}
+.containerCol {
+    composes: container;
+    flex-direction: column;
+    max-width: 30%;
+}
+.item {
+    composes: card from './../../App.css';
+    background-color: rgba(0,255,0,0.3);
+}
+.image {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item > * span, h4 {
+    font-size: 2rem;
+    font-weight: bold;
 }

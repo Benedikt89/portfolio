@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import '../../App.css';
-import style from './Home.module.css'
-import BgPict from '../../assets/images/code-Wp.jpg'
+import style from './About.module.css'
+import BgPict from '../../assets/images/woodBg.jpg'
+import mainPict from './../../assets/images/avtar-01.jpg'
 
-class Home extends Component {
+class About extends Component {
     render() {
         return (
             <div className={style.banner}>
@@ -12,12 +13,13 @@ class Home extends Component {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat',
+                    opacity: 0.9,
                 }}>
                     <div className={style.bannerContent}>
 
-                        <h2 className={style.title}>Constantine</h2>
+                        <h2 className=''>Constantine</h2>
                         <div className={style.mainPict}>
-
+                            <img src={mainPict}/>
                         </div>
                     </div>
 
@@ -27,4 +29,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default About;

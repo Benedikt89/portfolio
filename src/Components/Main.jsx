@@ -6,6 +6,7 @@ import Skills from "./Skills/Skills";
 import Works from "./Works/Works";
 import Header from "./Header/Header";
 import Contacts from "./Contacts/Contacts";
+import About from "./About/About";
 
 class Main extends Component {
     render() {
@@ -13,6 +14,7 @@ class Main extends Component {
             <div>
                 <Header/>
                 <Home/>
+                <About/>
                 <Skills/>
                 <Works/>
                 <Contacts/>

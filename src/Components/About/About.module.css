@@ -1,18 +1,13 @@
 
 .banner {
     composes: banner from './../../App.css';
-    background-color: rgba(0, 0, 0, 0.4);
 }
 .bannerContent {
     composes: bannerContent from './../../App.css';
-    background-color: rgba(0, 0, 0, 0.8);
 }
 .mainPict > img{
     max-width: 400px;
 }
 .container {
     composes: container from './../../App.css';
-}
-.title {
-    text-shadow: grey;
 }
