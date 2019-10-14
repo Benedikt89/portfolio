@@ -9,7 +9,11 @@ body {
   color: white;
   font-size: 2rem;
 }
-
+@media (min-width: 360px) and (max-width: 767px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

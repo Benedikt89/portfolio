@@ -1,9 +1,12 @@
 
 .banner {
     composes: banner from './../../App.css';
+    min-height: 70vh;
 }
 .bannerContent {
     composes: bannerContent from './../../App.css';
+    min-height: 70vh;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .container {
     composes: container from './../../App.css';

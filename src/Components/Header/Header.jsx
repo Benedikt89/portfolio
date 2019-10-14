@@ -4,17 +4,18 @@ import style from './Header.module.css'
 class Header extends Component {
     render() {
         return (
-            <div style={{position: 'relative'}}>
+            <div style={{position: 'relative', width: '100%'}}>
                 <div className={style.navBar}>
                     <div className={style.container}>
-                        <h2 className=''>Header</h2>
+                        <h3 style={{cursor: 'pointer'}}>Constantine</h3>
                     </div>
 
-                    <div className={style.container}>
-                        <button className={style.btn}>asd</button>
-                        <button className={style.btn}>asd</button>
-                        <button className={style.btn}>asd</button>
-                        <button className={style.btn}>asd</button>
+                    <div className={style.navButtonsBlock}>
+                        <button className={style.btn}>HOME</button>
+                        <button className={style.btn}>ABOUT</button>
+                        <button className={style.btn}>SKILLS</button>
+                        <button className={style.btn}>WORKS</button>
+                        <button className={style.btn}>CONTACTS</button>
                     </div>
                 </div>
             </div>

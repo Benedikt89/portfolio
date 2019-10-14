@@ -19,7 +19,7 @@
 .item {
     composes: card from './../../App.css';
     margin: 10px;
-    background-color: rgba(0,255,0,0.3);
+    background-color: rgba(0,0,0,0.2);
 }
 .image {
     min-height: 200px;
@@ -43,4 +43,32 @@
     font-weight: bolder;
     color: white;
     margin: 5px;
+}
+
+@media (max-width: 992px) {
+    .containerCards {
+        justify-content: space-between;
+    }
+}
+
+.img-wrapper {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.inner-img {
+    transition: 0.3s;
+}
+
+.inner-img:hover {
+    transform: scale(1.1);
+}
+
+/* Other styling elements, that are not necessary for the example */
+
+.img-wrapper {
+    display: inline-block;
+    box-sizing: border-box;
+//border: 1px solid #000;
 }

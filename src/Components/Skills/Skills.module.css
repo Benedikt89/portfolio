@@ -11,6 +11,7 @@
 .skillsContent{
     composes: bannerContent from './../../App.css';
     flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .container {
     composes: container from './../../App.css';
@@ -20,6 +21,20 @@
     margin: 10px;
     min-height: min-content;
 }
+@media (max-width: 360px) {
+    .skillsContent {
+        justify-content: center;
+    }
+    .item {
+        max-width: 290px;
+    }
+    .skillsContent{
+        flex-direction: row;
+    }
+    h2 {
+        font-size: 1.9rem;
+    }
+}
 .containerCol {
     composes: container;
     flex-direction: column;
@@ -27,7 +42,6 @@
 }
 .item {
     composes: card from './../../App.css';
-    background-color: rgba(0,255,0,0.3);
 }
 .image {
     min-height: 200px;

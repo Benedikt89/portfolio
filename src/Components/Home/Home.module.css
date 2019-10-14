@@ -7,12 +7,27 @@
     composes: bannerContent from './../../App.css';
     background-color: rgba(0, 0, 0, 0.8);
 }
-.mainPict > img{
-    max-width: 400px;
+.discription {
+    composes: container from './../../App.css';
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: initial;
+    border-left: 3px solid #8f857d;
+    box-shadow: -3px 0px 3px -3px #8f857d;
 }
 .container {
     composes: container from './../../App.css';
 }
 .title {
-    text-shadow: grey;
+    text-shadow: #8f857d;
+    margin: 10px;
+}
+.downloadBtn {
+    background-color: rgba(0,0,0,0);
+    padding: 8px;
+    border: 1px solid #8f857d;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
 }

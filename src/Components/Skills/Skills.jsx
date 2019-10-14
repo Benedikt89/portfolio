@@ -55,7 +55,8 @@ class Skills extends Component {
                     style={{backgroundImage: `url(${i.imgSrc})`,
                         backgroundSize: 'contain',
                         backgroundPosition: 'center center',
-                        backgroundRepeat: 'no-repeat',}}
+                        backgroundRepeat: 'no-repeat',
+                        opacity: 0.9,}}
                     className={style.image}
                 ><span>React</span></div>
 
@@ -72,7 +73,7 @@ class Skills extends Component {
                     backgroundImage: `url(${BgPict})`}}
                      className={style.parallaxImg}>
                     <div className={style.skillsContent}>
-                        <div>
+                        <div className={style.container}>
                             <h2>PROFESSIONAL SKILLS</h2>
                         </div>
 

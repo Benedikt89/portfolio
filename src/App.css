@@ -25,18 +25,18 @@
     -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
+    min-height: 120vh;
 }
 .bannerContent {
-    min-height: 100vh;
+    min-height: 120vh;
     position: relative;
     z-index: 1;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
 }
-.bannerContent > div {
-    background-color: rgba(0,255,0,0.1);
-}
+
 .container {
     width: 100%;
     padding-right: 15px;
@@ -69,6 +69,9 @@
     .container {
         max-width: 540px;
     }
+    h2, h3 {
+        font-size: 1.8rem;
+    }
 }
 @media (max-width: 576px) and (min-width: 360px){
     .container {
@@ -83,6 +86,12 @@ button {
     border: solid 1px transparent;
     border-radius: 1px;
     padding: 5px;
+    box-sizing: border-box;
+    max-height: 3rem;
+    cursor: pointer;
+}
+button:hover{
+    border-bottom: 1px solid #8f857d;
 }
 link {
     text-decoration: none;

@@ -3,11 +3,64 @@
     composes: banner from './../../App.css';
 }
 .bannerContent {
-    composes: bannerContent from './../../App.css';
+    composes: container from './../../App.css';
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 120vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: row;
+}
+.mainPict {
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    position: relative;
+    display: table;
 }
 .mainPict > img{
+    transform: translateZ(50px);
     max-width: 400px;
+    vertical-align: middle;
+    border-style: none;
 }
 .container {
     composes: container from './../../App.css';
+    flex-direction: column;
+    text-align: left;
+    max-width: 40rem;
+}
+.container > article {
+    font-size: 18px;
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+.containerIform {
+    composes: container;
+    padding-left: 0px;
+}
+.containerIform > span {
+    padding: 10px 0px;
+    font-size: 20px;
+    border-bottom: 1px solid #8f857d;
+}
+.title {
+    position: relative;
+    font-family: 'Montserrrat', sans-serif;
+}
+.title > span:nth-child(1) span:after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 15px;
+    z-index: 0;
+    background-color: red;
+}
+.title > span:nth-child(2) span:after{
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 15px;
+    z-index: 0;
+    background-color: blue;
 }

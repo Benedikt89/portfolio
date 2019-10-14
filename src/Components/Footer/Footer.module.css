@@ -1,3 +1,9 @@
 .container {
     composes: container from './../../App.css';
+    justify-content: space-around;
+    align-content: center;
+}
+
+.container > span {
+    margin-bottom: 15px;
 }
