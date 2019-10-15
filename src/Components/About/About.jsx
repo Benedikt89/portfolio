@@ -22,9 +22,8 @@ class About extends Component {
 
                         <div className={style.container}>
                             <h2 className={style.title}>
-                                I'm <span> Constantine Kostka
-                            </span
-                            ></h2>
+                                <span>I'm Kostka </span><span> Constantine</span>
+                            </h2>
                             <h5>A Lead UX & UI designer based in Canada</h5>
                             <article>
                                 I design and develop services for customers of all sizes, specializing in creating

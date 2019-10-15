@@ -102,7 +102,7 @@ class Works extends Component {
                     backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat',
                 }}>
-                    <div className={style.skillsContent}>
+                    <div className={style.worksContent}>
                         <div>
                             <h2>LATEST WORKS</h2>
                         </div>

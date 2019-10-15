@@ -18,10 +18,7 @@
 .container {
     composes: container from './../../App.css';
 }
-.title {
-    text-shadow: #8f857d;
-    margin: 10px;
-}
+
 .downloadBtn {
     background-color: rgba(0,0,0,0);
     padding: 8px;
@@ -30,4 +27,22 @@
     font-size: 20px;
     color: white;
     margin-top: 20px;
+}
+.title {
+    text-shadow: #8f857d;
+    margin: 10px;
+    z-index: 2;
+}
+.title span {
+    max-width: min-content;
+    position: relative;
+}
+.title span:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 15px;
+    background-color: blue;
+    z-index: -1;
 }

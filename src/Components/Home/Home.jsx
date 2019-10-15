@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import '../../App.css';
 import style from './Home.module.css'
 import BgPict from '../../assets/images/code-Wp.jpg'
 
@@ -19,7 +18,7 @@ class Home extends Component {
                                 Hello, my name is
                             </span>
                             <h2 className={style.title}>
-                                Constantine Kostka
+                                Kostka <span>Constantine</span>
                             </h2>
 
                             <span>

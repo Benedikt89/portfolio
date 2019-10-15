@@ -17,6 +17,18 @@
     transform-style: preserve-3d;
     position: relative;
     display: table;
+    margin-top: 50px;
+    margin-right: 50px;
+    position: relative;
+}
+.mainPict:before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    height: 480px;
+    width: 420px;
+    border: 15px solid red;
 }
 .mainPict > img{
     transform: translateZ(50px);
@@ -28,7 +40,7 @@
     composes: container from './../../App.css';
     flex-direction: column;
     text-align: left;
-    max-width: 40rem;
+    max-width: 30rem;
 }
 .container > article {
     font-size: 18px;
@@ -47,20 +59,19 @@
 .title {
     position: relative;
     font-family: 'Montserrrat', sans-serif;
+    max-width: min-content;
 }
-.title > span:nth-child(1) span:after{
+.title span {
+    z-index: 2;
+    max-width: min-content;
+    position: relative;
+}
+.title span:nth-child(even):before{
     content: "";
     position: absolute;
-    width: 300px;
+    width: 100%;
+    bottom: 0;
     height: 15px;
-    z-index: 0;
-    background-color: red;
-}
-.title > span:nth-child(2) span:after{
-    content: "";
-    position: absolute;
-    width: 600px;
-    height: 15px;
-    z-index: 0;
     background-color: blue;
+    z-index: -1;
 }

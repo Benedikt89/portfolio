@@ -3,6 +3,7 @@
 }
 .worksContent{
     composes: bannerContent from './../../App.css';
+    flex-direction: column;
 }
 .container {
     composes: container from './../../App.css';
