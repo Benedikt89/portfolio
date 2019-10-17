@@ -1,6 +1,20 @@
 import React, {Component} from 'react';
-import style from './Home.module.css'
-import BgPict from '../../assets/images/code-Wp.jpg'
+import style from './Home.module.css';
+import BgPict from '../../assets/images/code-Wp.jpg';
+import Particles from 'react-particles-js';
+
+
+const particlesOpt = {
+    particles : {
+        number: {
+            value: 120,
+            density: {
+                enable: true,
+                value_area: 800,
+            }
+        }
+    }
+};
 
 class Home extends Component {
     render() {
@@ -12,6 +26,7 @@ class Home extends Component {
                     backgroundPosition: 'center center',
                     backgroundRepeat: 'no-repeat',
                 }}>
+                    <Particles className={style.particles} params={particlesOpt}/>
                     <div className={style.bannerContent}>
                         <div className={style.discription}>
                             <span>

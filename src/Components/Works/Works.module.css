@@ -6,54 +6,70 @@
     flex-direction: column;
 }
 .container {
-    composes: container from './../../App.css';
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
     min-height: min-content;
 }
 .containerCards {
     composes: container;
     justify-content: center;
 }
-.projectImageWrapper {
-    width: 100%;
-    max-width: 40%;
-    /* whatever width you want */
-    display: flex;
+.projectWrapper {
+    margin: 10px;
+    padding: 5px;
+    width: 500px;
+    height: max-content;
     position: relative;
-    background-size: contain;
-    margin: 0 auto;
-}
-.projectImageWrapper:after {
-    padding-top: 75%;
-    /* this llama image is 800x600 so set the padding top % to match 600/800 = .75 */
-    display: flex;
-    content: '';
-}
-.projectImageWrapper:hover{
-    transform: scale(1.05);
-}
-.projectContent {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.2);
 }
-.projectContent > h4 {
-    font-size: 2rem;
-    font-weight: bold;
+.projectImg {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.projectImg:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 300px;
+    background-color: rgba(255,255,255,0.5);
+    z-index: 32;
+}
+.projectImg > h4 {
+    background-color: rgba(0,0,120,0.9);
+    z-index: 44;
+}
+.projectContent {
+    composes: container;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .link {
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 .link:hover {
     border-bottom: 1px solid white;
@@ -72,6 +88,7 @@
     font-weight: bolder;
     color: white;
     margin: 5px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 @media (max-width: 992px) {

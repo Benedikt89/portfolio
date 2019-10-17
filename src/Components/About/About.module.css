@@ -24,15 +24,22 @@
     flex-direction: row;
 }
 .mainPict {
-    transform: perspective(1000px);
     transform-style: preserve-3d;
+    will-change: transform;
+    transition: all 1s ease-in-out 1s;
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
     position: relative;
     margin-top: 15%;
     margin-right: 15%;
     margin-bottom: 15%;
 }
+.mainPict:hover {
+    -webkit-transform: rotateY(15deg);
+    transform: rotateY(15deg);
+}
 .mainPict:before {
     content: '';
+    transform: scale(1) translate(10%, 0px);
     position: absolute;
     top: -10%;
     left: 3%;

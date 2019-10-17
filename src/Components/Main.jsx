@@ -12,6 +12,7 @@ class Main extends Component {
     render() {
         return (
             <div>
+
                 <Header/>
                 <Home/>
                 <About/>

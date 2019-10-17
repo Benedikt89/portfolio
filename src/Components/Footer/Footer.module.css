@@ -1,9 +1,17 @@
 .container {
     composes: container from './../../App.css';
-    justify-content: space-around;
+    justify-content: center;
     align-content: center;
 }
-
-.container > span {
-    margin-bottom: 15px;
+.container >h6 {
+    margin: 15px;
+}
+.linkSocial > a{
+    margin-right: 10px;
+    margin-left: 10px;
+    min-height: fit-content;
+    cursor: pointer;
+}
+.linkSocial {
+    min-height: fit-content;
 }

@@ -3,8 +3,14 @@ import '../../App.css';
 import style from './About.module.css'
 import BgPict from '../../assets/images/woodBg.jpg'
 import mainPict from './../../assets/images/avtar-01.jpg'
+import {Fade} from "react-reveal";
+
 
 class About extends Component {
+
+    state={ show: false };
+
+    show = () => {this.setState({show: true})};
     render() {
         let email = 'asdasd@ewr.de';
         return (
@@ -18,11 +24,12 @@ class About extends Component {
                     <div className={style.bannerContent}>
                         <div className={style.container}>
                         <div className={style.mainPict}>
-                            <img src={mainPict}/>
+                            <img onClick={this.show} src={mainPict}/>
                         </div>
                         </div>
 
                         <div className={style.container}>
+                            <Fade bottom>
                             <h2 className={style.title}>
                                 <span>I'm Kostka </span><span> Constantine</span>
                             </h2>
@@ -33,11 +40,14 @@ class About extends Component {
                                 digital user experiences through the bold interface and meaningful interactions. Check
                                 out my Portfolio
                             </article>
+                            </Fade>
                             <div className={style.containerIform}>
+                                <Fade bottom cascade>
                                 <span>birthday: 21 april 1989</span>
                                 <span>Age: 30</span>
                                 <span>Residence: Minsk, Belarus</span>
                                 <span>E-mail: {email}</span>
+                                </Fade>
                             </div>
                         </div>
                     </div>
