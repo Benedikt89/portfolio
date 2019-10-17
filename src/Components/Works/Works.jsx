@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import style from './Works.module.css';
 import BgPict from './../../assets/images/woodBg.jpg'
-import reactLogo from "../../assets/images/redux.svg";
+import reactLogo from "../../assets/ico/React.ico";
+import dogGameImg from "../../assets/images/dog-centre.jpg";
 
 class Works extends Component {
     state = {
@@ -46,7 +47,7 @@ class Works extends Component {
                 id: 605,
                 title: 'Dog-Game',
                 techs: ['all', 'react'],
-                imgSrc: reactLogo,
+                imgSrc: dogGameImg,
                 discription: 'asdasdas',
                 gitLink: 'http:/',
                 codeLink: 'code:/',
@@ -72,27 +73,22 @@ class Works extends Component {
     render() {
 
         let workItems = this.state.worksItems
-            .filter( wi => wi.techs.includes(this.state.selectedFilter))
+            .filter(wi => wi.techs.includes(this.state.selectedFilter))
             .map(i =>
-            <div className={style.item} key={i.id}>
-                <div
-                    style={{backgroundImage: `url(${i.imgSrc})`,
-                        backgroundSize: 'contain',
-                        backgroundPosition: 'center center',
-                        backgroundRepeat: 'no-repeat',}}
-                    className={style.image}
-                ><span>React</span></div>
-
-                <h4>{i.title}</h4>
-                <div className={style.container}>
-                    <span>{i.experience}</span>
+                <div style={{
+                    backgroundImage: `url(${i.imgSrc})`,
+                    backgroundPosition: 'top center',
+                    backgroundRepeat: 'no-repeat',
+                }} className={style.projectImageWrapper} key={i.id}>
+                    <div className={style.projectContent}>
+                        <h4>{i.title}</h4>
+                        <div className={style.container}>
+                            <span className={style.link}> code </span>
+                            <span className={style.link}> project </span>
+                        </div>
+                    </div>
                 </div>
-                <div className={style.container}>
-                    <span> code </span>
-                    <span> project </span>
-                </div>
-            </div>
-        );
+            );
 
         return (
             <div className={style.worksBanner}>
@@ -106,28 +102,44 @@ class Works extends Component {
                         <div>
                             <h2>LATEST WORKS</h2>
                         </div>
+                        <div className={style.line}></div>
                         <div className={style.filterBtnRow}>
                             <button
                                 className={style.filterBtn}
-                                onClick={()=>{this.filterSelect('all')}}
-                            >All</button>
+                                onClick={() => {
+                                    this.filterSelect('all')
+                                }}
+                            >All
+                            </button>
                             <button
                                 className={style.filterBtn}
-                                onClick={()=>{this.filterSelect('react')}}
-                            >React</button>
+                                onClick={() => {
+                                    this.filterSelect('react')
+                                }}
+                            >React
+                            </button>
                             <button
                                 className={style.filterBtn}
-                                onClick={()=>{this.filterSelect('css')}}
-                            >Css</button>
+                                onClick={() => {
+                                    this.filterSelect('css')
+                                }}
+                            >Css
+                            </button>
                             <button
                                 className={style.filterBtn}
-                                onClick={()=>{this.filterSelect('redux')}}
-                            >Redux</button>
+                                onClick={() => {
+                                    this.filterSelect('redux')
+                                }}
+                            >Redux
+                            </button>
                         </div>
 
-                        <div className={style.containerCards}>
-                            {workItems}
+                        <div className={style.container}>
+                            <div className={style.containerCards}>
+                                {workItems}
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>

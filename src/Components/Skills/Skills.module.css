@@ -21,6 +21,9 @@
     margin: 10px;
     min-height: min-content;
 }
+.container > article{
+    font-size: 1.2rem;
+}
 @media (max-width: 360px) {
     .skillsContent {
         justify-content: center;
@@ -43,13 +46,49 @@
 .item {
     composes: card from './../../App.css';
 }
+.item > h4{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.imageContainer{
+    position: relative;
+    margin-top: 3rem;
+    height: 8rem;
+}
 .image {
-    min-height: 200px;
+    margin-top: 2.3rem;
+    position: relative;
+    min-height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 2;
 }
-.item > * span, h4 {
+.imageContainer:before {
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: -19%;
+    height: 7rem;
+    width: 7rem;
+    border-inline: #8f857d;
+    background-color: #3f3f3f;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.image > span{
     font-size: 2rem;
     font-weight: bold;
+    color: black;
+    z-index: 3;
+    opacity: 0;
+}
+
+.line {
+    display: flex;
+    content: '';
+    background-color: white;
+    height: 1px;
+    width: 50px;
+    margin: 30px auto;
 }

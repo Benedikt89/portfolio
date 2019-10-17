@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
 import style from './Skills.module.css';
-import BgPict from './../../assets/images/code-Wp.jpg'
-import reactLogo from './../../assets/images/redux.svg'
+import BgPict from './../../assets/images/code-Wp.jpg';
+import reactLogo from './../../assets/ico/React.ico';
+import htmlLogo from './../../assets/ico/iconfinder_html_169775.png';
+import jsLogo from './../../assets/ico/iconfinder_js_282802.ico';
+import cssLogo from './../../assets/ico/iconfinder_icon-12-file-css_314563.png';
+import tsLogo from './../../assets/ico/iconfinder_icon-76-document-file-html_315697.ico';
 
 
 class Skills extends Component {
@@ -11,37 +15,37 @@ class Skills extends Component {
                 id: 101,
                 title: 'React',
                 imgSrc: reactLogo,
-                experience: 'none',
+                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...',
             },
             {
                 id: 102,
-                title: 'React',
-                imgSrc: reactLogo,
-                experience: 'none',
+                title: 'JS',
+                imgSrc: jsLogo,
+                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
             },
             {
                 id: 103,
-                title: 'React',
-                imgSrc: reactLogo,
-                experience: 'none',
+                title: 'CSS',
+                imgSrc: cssLogo,
+                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
             },
             {
                 id: 104,
-                title: 'React',
-                imgSrc: reactLogo,
-                experience: 'none',
+                title: 'TS',
+                imgSrc: tsLogo,
+                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
             },
             {
                 id: 105,
-                title: 'React',
-                imgSrc: reactLogo,
-                experience: 'none',
+                title: 'HTML',
+                imgSrc: htmlLogo,
+                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
             },
             {
                 id: 106,
-                title: 'React',
+                title: 'Redux',
                 imgSrc: reactLogo,
-                experience: 'none',
+                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
             },
         ]
 
@@ -51,18 +55,24 @@ class Skills extends Component {
 
         let skillItems = this.state.skillsItems.map(i =>
             <div className={style.item} key={i.id}>
-                <div
-                    style={{backgroundImage: `url(${i.imgSrc})`,
-                        backgroundSize: 'contain',
-                        backgroundPosition: 'center center',
-                        backgroundRepeat: 'no-repeat',
-                        opacity: 0.9,}}
-                    className={style.image}
-                ><span>React</span></div>
+                <div className={style.imageContainer}>
+                    <div
+                        style={{
+                            backgroundImage: `url(${i.imgSrc})`,
+                            backgroundSize: 'contain',
+                            backgroundPosition: 'center center',
+                            backgroundRepeat: 'no-repeat',
+                            opacity: 0.9,
+                        }}
+                        className={style.image}
+                    >
+                        <span>React</span>
+                    </div>
+                </div>
 
-                    <h4>{i.title}</h4>
+                <h4>{i.title}</h4>
                 <div className={style.container}>
-                    <span>{i.experience}</span>
+                    <article>{i.experience}</article>
                 </div>
             </div>
         );
@@ -70,18 +80,21 @@ class Skills extends Component {
         return (
             <div className={style.skillsBanner}>
                 <div style={{
-                    backgroundImage: `url(${BgPict})`}}
+                    backgroundImage: `url(${BgPict})`
+                }}
                      className={style.parallaxImg}>
                     <div className={style.skillsContent}>
                         <div className={style.container}>
                             <h2>PROFESSIONAL SKILLS</h2>
                         </div>
 
+                        <div className={style.line}></div>
+
                         <div className={style.container}>
                             {skillItems}
                         </div>
 
-                        <hr />
+                        <hr/>
 
                         <h3>MORE SKILLS</h3>
                         <div className={style.container}>

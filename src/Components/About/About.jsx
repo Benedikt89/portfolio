@@ -16,8 +16,10 @@ class About extends Component {
                     backgroundRepeat: 'no-repeat',
                 }}>
                     <div className={style.bannerContent}>
+                        <div className={style.container}>
                         <div className={style.mainPict}>
                             <img src={mainPict}/>
+                        </div>
                         </div>
 
                         <div className={style.container}>

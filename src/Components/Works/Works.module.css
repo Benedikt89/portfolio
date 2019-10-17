@@ -15,23 +15,51 @@
 }
 .containerCards {
     composes: container;
-    justify-content: flex-start;
-}
-.item {
-    composes: card from './../../App.css';
-    margin: 10px;
-    background-color: rgba(0,0,0,0.2);
-}
-.image {
-    min-height: 200px;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
-.item > * span, h4 {
+.projectImageWrapper {
+    width: 100%;
+    max-width: 40%;
+    /* whatever width you want */
+    display: flex;
+    position: relative;
+    background-size: contain;
+    margin: 0 auto;
+}
+.projectImageWrapper:after {
+    padding-top: 75%;
+    /* this llama image is 800x600 so set the padding top % to match 600/800 = .75 */
+    display: flex;
+    content: '';
+}
+.projectImageWrapper:hover{
+    transform: scale(1.05);
+}
+.projectContent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.projectContent > h4 {
     font-size: 2rem;
     font-weight: bold;
 }
+.link {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.link:hover {
+    border-bottom: 1px solid white;
+    color: #999999;
+}
+
 .filterBtnRow {
     composes: container from './../../App.css';
     flex-direction: row;
@@ -51,25 +79,11 @@
         justify-content: space-between;
     }
 }
-
-.img-wrapper {
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.inner-img {
-    transition: 0.3s;
-}
-
-.inner-img:hover {
-    transform: scale(1.1);
-}
-
-/* Other styling elements, that are not necessary for the example */
-
-.img-wrapper {
-    display: inline-block;
-    box-sizing: border-box;
-//border: 1px solid #000;
+.line {
+    display: flex;
+    content: '';
+    background-color: white;
+    height: 1px;
+    width: 50px;
+    margin: 30px auto;
 }

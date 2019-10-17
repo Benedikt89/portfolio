@@ -15,7 +15,8 @@ class Footer extends Component {
                     <span>asd</span>
                     <span>asd</span>
                 </div>
-
+                <hr />
+                <span>@Copyright My d</span>
             </div>
         );
     }

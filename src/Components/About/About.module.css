@@ -1,41 +1,4 @@
 
-.banner {
-    composes: banner from './../../App.css';
-}
-.bannerContent {
-    composes: container from './../../App.css';
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    min-height: 120vh;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    flex-direction: row;
-}
-.mainPict {
-    transform: perspective(1000px);
-    transform-style: preserve-3d;
-    position: relative;
-    display: table;
-    margin-top: 50px;
-    margin-right: 50px;
-    position: relative;
-}
-.mainPict:before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    height: 480px;
-    width: 420px;
-    border: 15px solid red;
-}
-.mainPict > img{
-    transform: translateZ(50px);
-    max-width: 400px;
-    vertical-align: middle;
-    border-style: none;
-}
 .container {
     composes: container from './../../App.css';
     flex-direction: column;
@@ -46,6 +9,42 @@
     font-size: 18px;
     padding: 10px 0px;
     margin-bottom: 10px;
+}
+.banner {
+    composes: banner from './../../App.css';
+}
+.bannerContent {
+    composes: container from './../../App.css';
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 150vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: row;
+}
+.mainPict {
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    position: relative;
+    margin-top: 15%;
+    margin-right: 15%;
+    margin-bottom: 15%;
+}
+.mainPict:before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 3%;
+    height: 115%;
+    width: 100%;
+    border: 15px solid blue;
+}
+.mainPict > img{
+    transform: translateZ(50px);
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
 }
 .containerIform {
     composes: container;

@@ -4,11 +4,12 @@
 .card{
     display: flex;
     flex-direction: column;
-    width: 310px;
+    align-items: center;
+    width: 19rem;
+    height: 30rem;
     padding: 0 10px 50px;
     color: #999;
     font-size: 15px;
-    border: 1px solid grey;
     margin-top: 5px;
     margin-bottom: 10px;
 }
