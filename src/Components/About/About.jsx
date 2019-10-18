@@ -2,15 +2,14 @@ import React, {Component} from 'react';
 import '../../App.css';
 import style from './About.module.css'
 import BgPict from '../../assets/images/woodBg.jpg'
-import mainPict from './../../assets/images/avtar-01.jpg'
 import {Fade} from "react-reveal";
-
+import MainPict from "./MainPict";
+import ReactCursorPosition from 'react-cursor-position';
 
 class About extends Component {
 
     state={ show: false };
 
-    show = () => {this.setState({show: true})};
     render() {
         let email = 'asdasd@ewr.de';
         return (
@@ -22,11 +21,9 @@ class About extends Component {
                     backgroundRepeat: 'no-repeat',
                 }}>
                     <div className={style.bannerContent}>
-                        <div className={style.container}>
-                        <div className={style.mainPict}>
-                            <img onClick={this.show} src={mainPict}/>
-                        </div>
-                        </div>
+                        <ReactCursorPosition>
+                            <MainPict />
+                        </ReactCursorPosition>
 
                         <div className={style.container}>
                             <Fade bottom>
