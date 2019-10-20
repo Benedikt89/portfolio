@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.0c7b5deb.chunk.css",
+    "main.js": "/portfolio/static/js/main.de0f0f6b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.de0f0f6b.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.021c856b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.021c856b.js.map",
+    "static/js/2.ac0554db.chunk.js": "/portfolio/static/js/2.ac0554db.chunk.js",
+    "static/js/2.ac0554db.chunk.js.map": "/portfolio/static/js/2.ac0554db.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.71874b221eeabf7df0aa37e794899040.js": "/portfolio/precache-manifest.71874b221eeabf7df0aa37e794899040.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.0c7b5deb.chunk.css.map": "/portfolio/static/css/main.0c7b5deb.chunk.css.map",
+    "static/media/Circles-Facebook.ico": "/portfolio/static/media/Circles-Facebook.2ba32941.ico",
+    "static/media/Circles-GitHub.ico": "/portfolio/static/media/Circles-GitHub.d40d85c0.ico",
+    "static/media/Circles-LinkedIn.ico": "/portfolio/static/media/Circles-LinkedIn.7c221dcf.ico",
+    "static/media/Circles-Skype.ico": "/portfolio/static/media/Circles-Skype.f1f7dcec.ico",
+    "static/media/React.svg": "/portfolio/static/media/React.f0793d9f.svg",
+    "static/media/avtar-01.jpg": "/portfolio/static/media/avtar-01.c74ae4a7.jpg",
+    "static/media/city.jpg": "/portfolio/static/media/city.bdb44321.jpg",
+    "static/media/code-Wp.jpg": "/portfolio/static/media/code-Wp.58e4abc0.jpg",
+    "static/media/dog-centre.jpg": "/portfolio/static/media/dog-centre.416809f6.jpg",
+    "static/media/work2.jpg": "/portfolio/static/media/work2.0c2df4aa.jpg",
+    "static/media/work3.jpg": "/portfolio/static/media/work3.dc4eb5a9.jpg",
+    "static/media/work4.jpg": "/portfolio/static/media/work4.a7fbaac1.jpg",
+    "static/media/work5.jpg": "/portfolio/static/media/work5.046e2f2d.jpg",
+    "static/media/work6.jpg": "/portfolio/static/media/work6.66920371.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.021c856b.js",
+    "static/js/2.ac0554db.chunk.js",
+    "static/css/main.0c7b5deb.chunk.css",
+    "static/js/main.de0f0f6b.chunk.js"
+  ]
+}
