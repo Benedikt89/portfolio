@@ -91,10 +91,11 @@ button {
     margin: 2px 0;
     border: solid 1px transparent;
     border-radius: 1px;
-    padding: 5px;
+    padding: 8px 20px;
     box-sizing: border-box;
     max-height: 3rem;
     cursor: pointer;
+    font-weight: 400;
 }
 button:hover{
     border-bottom: 1px solid #8f857d;
@@ -108,3 +109,4 @@ hr {
     width: 80%;
     border-color: rgb(169, 160, 111);
 }
+button:focus {outline:0;}

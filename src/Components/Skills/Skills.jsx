@@ -94,7 +94,7 @@ class Skills extends Component {
         );
 
         return (
-            <div className={style.skillsBanner}>
+            <div id={'skills'} className={style.skillsBanner}>
                 <div style={{
                     // backgroundImage: `url(${BgPict})`
                 }}

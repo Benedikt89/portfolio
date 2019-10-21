@@ -7,7 +7,7 @@ import BgPict from '../../assets/images/home.jpg';
 class Home extends Component {
     render() {
         return (
-            <div className={style.banner}>
+            <div className={style.banner} id={"home"}>
                 <div style={{
                     backgroundImage: `url(${BgPict})`,
                     backgroundSize: 'cover',

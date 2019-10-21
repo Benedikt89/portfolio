@@ -18,7 +18,7 @@ class Works extends Component {
                 displaying: true,
                 techs: ['all', 'react', 'redux'],
                 imgSrc: sotialWorkImg,
-                discription: 'asdasdas',
+                discription: 'Studying project, creating Social network using React',
                 gitLink: 'http:/',
                 codeLink: 'code:/'
             },
@@ -28,7 +28,7 @@ class Works extends Component {
                 displaying: true,
                 techs: ['all', 'react', 'redux', 'css'],
                 imgSrc: organizerWorkImg,
-                discription: 'asdasdas',
+                discription: 'Studying task to create online organizer with API',
                 gitLink: 'http:/',
                 codeLink: 'code:/',
             },
@@ -48,7 +48,7 @@ class Works extends Component {
                 displaying: true,
                 techs: ['all', 'react', 'redux', 'css'],
                 imgSrc: bakeryShopImg,
-                discription: 'asdasdas sdf sdfsef sdf sdf',
+                discription: 'Helping Friend to do simple Layout on his shop',
                 gitLink: 'http:/',
                 codeLink: 'code:/',
             },
@@ -58,7 +58,7 @@ class Works extends Component {
                 displaying: true,
                 techs: ['all', 'react'],
                 imgSrc: dogGameImg,
-                discription: 'asdasdas asdjmn asjdn uhasdb hdb fhwdb whdb ywbd fs',
+                discription: 'Moving simple html game to react, redux and thunk',
                 gitLink: 'http:/',
                 codeLink: 'code:/',
             },
@@ -68,7 +68,7 @@ class Works extends Component {
                 title: 'Counter',
                 techs: ['all', 'react', 'redux'],
                 imgSrc: counterSrverImg,
-                discription: 'asdasdas',
+                discription: 'Task to create simple asynch counter using redux and thunk',
                 gitLink: 'http:/',
                 codeLink: 'code:/',
             },
@@ -102,7 +102,7 @@ class Works extends Component {
                     </div>
                     <div className={style.projectContent}>
                         <span> {i.discription}</span>
-                        <div className={style.container}>
+                        <div className={style.containerLinks}>
                             <span className={style.link}> code </span>
                             <span className={style.link}> project </span>
                         </div>
@@ -112,7 +112,7 @@ class Works extends Component {
             );
 
         return (
-            <div className={style.worksBanner}>
+            <div className={style.worksBanner} id={"works"}>
                 <div style={{
                     backgroundImage: `url(${BgPict})` }}>
                     <div className={style.worksContent}>

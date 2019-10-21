@@ -19,6 +19,10 @@
     align-items: center;
     min-height: min-content;
 }
+.containerLinks{
+    composes: container;
+    flex-direction: row!important;
+}
 .containerCards {
     composes: container;
     justify-content: center;
@@ -35,6 +39,7 @@
     align-items: center;
     background-color: rgba(255,255,255,0.2);
 }
+
 .projectImg {
     position: relative;
     width: 100%;
@@ -69,18 +74,10 @@
     text-align: center;
     flex-direction: column;
     justify-content: space-around;
-}
-.link {
-    font-size: 2rem;
-    font-weight: bold;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-.link:hover {
-    border-bottom: 1px solid white;
-    color: #999999;
-}
+    font-weight: 400;
+    z-index: 2;
 
+}
 .filterBtnRow {
     composes: container from './../../App.css';
     flex-direction: row;
@@ -88,17 +85,75 @@
 }
 .filterBtn {
     background-color: rgba(0, 0, 0, 0.05);
+    position: relative;
+    padding: 8px 30px;
     border: none;
     font-size: 20px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
     color: white;
+    min-width: 66px;
     margin: 5px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    z-index: 3;
+}
+.filterBtn:before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    height: 15px;
+    z-index: -1;
+    background-color: #00004b;
+    box-shadow: 0px 0px 5px 0px #00004b;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.filterBtn:hover:before {
+    height: 100%;
+    width: 100%;
 }
 
+.link {
+    composes: filterBtn;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.link:before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+    height: 15px;
+    z-index: -1;
+    background-color: #00004b;
+    box-shadow: 0px 0px 5px 0px #00004b;
+    -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.link:hover:before {
+    height: 100%;
+    width: 100%;
+}
 @media (max-width: 992px) {
     .containerCards {
-        justify-content: space-between;
+        justify-content: center;
+    }
+    .link{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 550px) {
+    .container{
+        padding: 2px;
+    }
+    .containerCards{
+        padding: 2px;
+        justify-content: center;
+    }
+    .projectWrapper {
+        width: 90%;
     }
 }
 .line {

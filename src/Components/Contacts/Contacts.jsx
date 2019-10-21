@@ -5,7 +5,7 @@ import bgPict from '../../assets/images/fsnelqQAkUA.jpg'
 class Contacts extends Component {
     render() {
         return (
-            <div className={style.banner}>
+            <div className={style.banner} id={"contacts"}>
                 <div style={{
                     backgroundImage: `url(${bgPict})`,
                 }} className={style.parallaxImg}>

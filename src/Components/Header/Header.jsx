@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import style from './Header.module.css'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class Header extends Component {
     render() {
@@ -11,11 +12,33 @@ class Header extends Component {
                     </div>
 
                     <div className={style.navButtonsBlock}>
-                        <button className={style.btn}>HOME</button>
-                        <button className={style.btn}>ABOUT</button>
-                        <button className={style.btn}>SKILLS</button>
-                        <button className={style.btn}>WORKS</button>
-                        <button className={style.btn}>CONTACTS</button>
+                        <Link to="about"
+                              activeClass={style.linkActive}
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {1500}
+                              className={style.link}>ABOUT</Link>
+                        <Link to="skills"activeClass={style.linkActive}
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {1500}
+                              className={style.link}>SKILLS</Link>
+                        <Link to="works"
+                              activeClass={style.linkActive}
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {1500}
+                              className={style.link}>WORKS</Link>
+                        <Link to="contacts"
+                              activeClass={style.linkActive}
+                              spy={true}
+                              smooth={true}
+                              offset={-70}
+                              duration= {1500}
+                              className={style.link}>CONTACTS</Link>
                     </div>
                 </div>
             </div>

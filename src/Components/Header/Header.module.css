@@ -48,11 +48,21 @@
     align-content: center;
     width: 19rem;
 }
-.btn {
+.link {
     background-color: rgba(0, 0, 0, 0.05);
     border: none;
     font-size: 16px;
     font-weight: bolder;
     color: white;
     margin: 5px;
+    scroll-behavior: smooth;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+.link:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+.linkActive {
+    composes: link;
+    text-shadow: 1px 1px 3px black, 0 0 1em #00004b;
 }

@@ -11,9 +11,9 @@ class About extends Component {
     state={ show: false };
 
     render() {
-        let email = 'asdasd@ewr.de';
+        let email = 'constantine.kostka@gmail.com';
         return (
-            <div className={style.banner}>
+            <div id={'about'} className={style.banner}>
                 <div style={{
                     backgroundImage: `url(${BgPict})`,
                     backgroundSize: 'cover',

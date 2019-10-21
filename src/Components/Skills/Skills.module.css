@@ -55,6 +55,7 @@
         font-size: 1.9rem;
     }
 }
+
 .containerCol {
     composes: container;
     flex-direction: column;
@@ -62,6 +63,13 @@
 }
 .containerCol > span {
     font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+    .containerCol {
+        max-width: 100%;
+        margin-top: 5rem;
+
+    }
 }
 .item {
     composes: card from './../../App.css';
