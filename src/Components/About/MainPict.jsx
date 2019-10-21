@@ -30,8 +30,8 @@ class MainPict extends Component {
                 }} className={style.mainPict} onMouseMove={this.onMove}>
                     <img src={mainPict}/>
                 </div>
-                <span>y={this.state.y}</span>
-                <span>x={this.state.x}</span>
+                {/*<span>y={this.state.y}</span>*/}
+                {/*<span>x={this.state.x}</span>*/}
             </div>
 
         );

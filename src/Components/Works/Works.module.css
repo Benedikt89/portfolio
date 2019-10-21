@@ -4,6 +4,7 @@
 .worksContent{
     composes: bannerContent from './../../App.css';
     flex-direction: column;
+    padding-bottom: 25px;
 }
 .container {
     width: 100%;
@@ -56,8 +57,12 @@
     z-index: 32;
 }
 .projectImg > h4 {
-    background-color: rgba(0,0,120,0.9);
     z-index: 44;
+    text-shadow: 1px 1px 2px black, 0 0 1em #3d3f50;
+    cursor: pointer;
+}
+.projectImg:hover > h4 {
+    text-shadow: 1px 1px 3px black, 0 0 1em #1f1d50;
 }
 .projectContent {
     composes: container;

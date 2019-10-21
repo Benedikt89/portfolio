@@ -1,12 +1,26 @@
 import React, {Component} from 'react';
 import style from './Skills.module.css';
-import BgPict from './../../assets/images/code-Wp.jpg';
+import BgPict from './../../assets/images/black-city-backgrounds-powerpoint.jpg';
 import reactLogo from './../../assets/ico/React.ico';
 import htmlLogo from './../../assets/ico/iconfinder_html_169775.png';
 import jsLogo from './../../assets/ico/iconfinder_js_282802.ico';
 import cssLogo from './../../assets/ico/iconfinder_icon-12-file-css_314563.png';
 import tsLogo from './../../assets/ico/iconfinder_icon-76-document-file-html_315697.ico';
+import Particles from 'react-particles-js';
+import {Fade} from "react-reveal";
 
+
+const particlesOpt = {
+    particles : {
+        number: {
+            value: 120,
+            density: {
+                enable: true,
+                value_area: 800,
+            }
+        }
+    }
+};
 
 class Skills extends Component {
     state = {
@@ -55,6 +69,7 @@ class Skills extends Component {
 
         let skillItems = this.state.skillsItems.map(i =>
             <div className={style.item} key={i.id}>
+                <Fade top>
                 <div className={style.imageContainer}>
                     <div
                         style={{
@@ -69,6 +84,7 @@ class Skills extends Component {
                         <span>React</span>
                     </div>
                 </div>
+                </Fade>
 
                 <h4>{i.title}</h4>
                 <div className={style.container}>
@@ -80,9 +96,10 @@ class Skills extends Component {
         return (
             <div className={style.skillsBanner}>
                 <div style={{
-                    backgroundImage: `url(${BgPict})`
+                    // backgroundImage: `url(${BgPict})`
                 }}
                      className={style.parallaxImg}>
+                    <Particles className={style.particles} params={particlesOpt}/>
                     <div className={style.skillsContent}>
                         <div className={style.container}>
                             <h2>PROFESSIONAL SKILLS</h2>
@@ -94,20 +111,6 @@ class Skills extends Component {
                             {skillItems}
                         </div>
 
-                        <hr/>
-
-                        <h3>MORE SKILLS</h3>
-                        <div className={style.container}>
-                            <div className={style.containerCol}>
-                                asdasdasd
-                            </div>
-                            <div className={style.containerCol}>
-                                asdasdasd
-                            </div>
-                            <div className={style.containerCol}>
-                                asdasdasd
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

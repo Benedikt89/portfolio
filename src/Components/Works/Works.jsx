@@ -7,6 +7,7 @@ import counterSrverImg from "../../assets/images/work5.jpg";
 import nodeSrverImg from "../../assets/images/work4.jpg";
 import bakeryShopImg from "../../assets/images/work6.png";
 import dogGameImg from "../../assets/images/dog-centre.jpg";
+import {Fade} from "react-reveal";
 
 class Works extends Component {
     state = {
@@ -14,6 +15,7 @@ class Works extends Component {
             {
                 id: 201,
                 title: 'Social-Network',
+                displaying: true,
                 techs: ['all', 'react', 'redux'],
                 imgSrc: sotialWorkImg,
                 discription: 'asdasdas',
@@ -23,6 +25,7 @@ class Works extends Component {
             {
                 id: 302,
                 title: 'Organizer Online',
+                displaying: true,
                 techs: ['all', 'react', 'redux', 'css'],
                 imgSrc: organizerWorkImg,
                 discription: 'asdasdas',
@@ -32,6 +35,7 @@ class Works extends Component {
             {
                 id: 403,
                 title: 'Node server',
+                displaying: true,
                 techs: ['all', 'react', 'redux', 'css'],
                 imgSrc: nodeSrverImg,
                 discription: 'asdasdas asd adsf sdf sdf sdf sdf sdfsefwef',
@@ -41,6 +45,7 @@ class Works extends Component {
             {
                 id: 504,
                 title: 'Bacery Shop',
+                displaying: true,
                 techs: ['all', 'react', 'redux', 'css'],
                 imgSrc: bakeryShopImg,
                 discription: 'asdasdas sdf sdfsef sdf sdf',
@@ -50,6 +55,7 @@ class Works extends Component {
             {
                 id: 605,
                 title: 'Dog-Game',
+                displaying: true,
                 techs: ['all', 'react'],
                 imgSrc: dogGameImg,
                 discription: 'asdasdas asdjmn asjdn uhasdb hdb fhwdb whdb ywbd fs',
@@ -58,6 +64,7 @@ class Works extends Component {
             },
             {
                 id: 706,
+                displaying: true,
                 title: 'Counter',
                 techs: ['all', 'react', 'redux'],
                 imgSrc: counterSrverImg,
@@ -71,14 +78,20 @@ class Works extends Component {
     };
 
     filterSelect = (filter) => {
-        this.setState({selectedFilter: filter})
+        let displayingCards = this.state.worksItems.map( wi => {
+            if (wi.techs.includes(filter)) {
+                return {...wi, displaying: true}
+            } else {
+                return {...wi, displaying: false}
+            }
+        });
+        this.setState({selectedFilter: filter, worksItems: displayingCards})
     };
 
     render() {
 
-        let workItems = this.state.worksItems
-            .filter(wi => wi.techs.includes(this.state.selectedFilter))
-            .map(i =>
+        let workItems = this.state.worksItems.map(i =>
+            <Fade big collapse when={i.displaying}>
                 <div className={style.projectWrapper} key={i.id}>
                     <div style={{
                         backgroundImage: `url(${i.imgSrc})`,
@@ -94,8 +107,8 @@ class Works extends Component {
                             <span className={style.link}> project </span>
                         </div>
                     </div>
-
                 </div>
+            </Fade>
             );
 
         return (

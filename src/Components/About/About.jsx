@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../../App.css';
 import style from './About.module.css'
-import BgPict from '../../assets/images/woodBg.jpg'
+import BgPict from '../../assets/images/black-city-backgrounds-powerpoint.jpg'
 import {Fade} from "react-reveal";
 import MainPict from "./MainPict";
 import ReactCursorPosition from 'react-cursor-position';
@@ -30,12 +30,11 @@ class About extends Component {
                             <h2 className={style.title}>
                                 <span>I'm Kostka </span><span> Constantine</span>
                             </h2>
-                            <h5>A Lead UX & UI designer based in Canada</h5>
+                            <h5>An junior React Developer from Minsk</h5>
                             <article>
-                                I design and develop services for customers of all sizes, specializing in creating
-                                stylish, modern websites, web services and online stores. My passion is to design
-                                digital user experiences through the bold interface and meaningful interactions. Check
-                                out my Portfolio
+                                I design and develop services , specializing in creating
+                                stylish, modern websites, web services and online stores.
+                                Check out my Portfolio
                             </article>
                             </Fade>
                             <div className={style.containerIform}>

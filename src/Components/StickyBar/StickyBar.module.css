@@ -1,0 +1,80 @@
+
+.navButton {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    z-index: 50;
+}
+
+@media (max-width: 576px) {
+    .navButtonsBlock {
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+.navButtonsBlock {
+    composes: container from './../../App.css';
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+@media (max-width: 580px) {
+    .navButtonsBlock {
+        flex-direction: column;
+    }
+
+    .container {
+        border-bottom: 1px solid darkgrey;
+    }
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.01);
+    border: none;
+    font-size: 16px;
+    font-weight: bolder;
+    color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.01);
+    margin: 5px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.btn:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btnMenu {
+    composes: btn;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.btnMenu > img {
+    max-width: 35px;
+}
+
+.navButtonsBlockOpened {
+    composes: navButtonsBlock;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}

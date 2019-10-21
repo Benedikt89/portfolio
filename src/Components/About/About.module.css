@@ -22,6 +22,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 .mainPict {
     position: relative;
@@ -38,16 +39,18 @@
 .mainPict:before {
     content: '';
     position: absolute;
-    top: -10%;
+    top: -6%;
     left: 3%;
-    height: 115%;
+    height: 107%;
     width: 100%;
-    border: 15px solid blue;
+    border: 15px solid #00004b;
+    box-shadow: 0px 0px 5px 0px #00004b;
     z-index: -1;
 }
 .mainPict > img{
     max-width: 100%;
     border-style: none;
+    box-shadow: 0px 0px 15px 0px #00004b;
 }
 .containerIform {
     composes: container;
@@ -74,6 +77,7 @@
     width: 100%;
     bottom: 0;
     height: 15px;
-    background-color: blue;
+    background-color: #00004b;
+    box-shadow: 0px 0px 5px 0px #00004b;
     z-index: -1;
 }

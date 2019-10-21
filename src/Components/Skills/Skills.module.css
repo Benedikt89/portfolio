@@ -13,6 +13,23 @@
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.banner {
+    composes: banner from './../../App.css';
+    min-height: 50vh;
+}
+.bannerContent {
+    composes: bannerContent from './../../App.css';
+    min-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.particles {
+    position: absolute!important;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 .container {
     composes: container from './../../App.css';
     flex-direction: row;
@@ -42,6 +59,9 @@
     composes: container;
     flex-direction: column;
     max-width: 30%;
+}
+.containerCol > span {
+    font-size: 1.2rem;
 }
 .item {
     composes: card from './../../App.css';
@@ -91,4 +111,11 @@
     height: 1px;
     width: 50px;
     margin: 30px auto;
+}
+.parallaxImg {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
