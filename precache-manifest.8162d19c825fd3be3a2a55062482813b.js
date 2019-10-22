@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "afb2b312439b76fc59d73e27cb5934ce",
+    "revision": "663013192cfd7e572a7e221ed78e9180",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "125eebef7254bc23760f",
-    "url": "/portfolio/static/css/main.3e5a5ccc.chunk.css"
+    "revision": "fd93e379192f121d3be2",
+    "url": "/portfolio/static/css/main.62f3c5eb.chunk.css"
   },
   {
-    "revision": "f44f413962ecc7f2eff8",
-    "url": "/portfolio/static/js/2.a7723ff2.chunk.js"
+    "revision": "4f9a143fbe2da1e0e2f9",
+    "url": "/portfolio/static/js/2.dfe6af68.chunk.js"
   },
   {
-    "revision": "125eebef7254bc23760f",
-    "url": "/portfolio/static/js/main.23e68d6a.chunk.js"
+    "revision": "fd93e379192f121d3be2",
+    "url": "/portfolio/static/js/main.1bedfbfa.chunk.js"
   },
   {
-    "revision": "76aa8cbd67b5c937ec2c",
-    "url": "/portfolio/static/js/runtime-main.e92c632a.js"
+    "revision": "791f997dc0acbb20fb93",
+    "url": "/portfolio/static/js/runtime-main.021c856b.js"
   },
   {
     "revision": "dbe77fc3f4956408034f3d1a766d36b0",
@@ -48,6 +48,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/black-city-backgrounds-powerpoint.183ca84c.jpg"
   },
   {
+    "revision": "5f23ba31d8db199a5984581855d16b85",
+    "url": "/portfolio/static/media/code.5f23ba31.svg"
+  },
+  {
     "revision": "416809f6e95e748d1769111a3c4c06ff",
     "url": "/portfolio/static/media/dog-centre.416809f6.jpg"
   },
@@ -66,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8f651f7c3c95b3595c27f7ea745989f1",
     "url": "/portfolio/static/media/iconfinder_js_282802.8f651f7c.ico"
+  },
+  {
+    "revision": "6d1ffe04380e979fc118998255fb8402",
+    "url": "/portfolio/static/media/page.6d1ffe04.svg"
   },
   {
     "revision": "5b450147628bb059b8be7afa6d60ca98",
