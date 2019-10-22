@@ -7,6 +7,8 @@ import counterSrverImg from "../../assets/images/work5.jpg";
 import nodeSrverImg from "../../assets/images/work4.jpg";
 import bakeryShopImg from "../../assets/images/work6.png";
 import dogGameImg from "../../assets/images/dog-centre.jpg";
+import codeIco from "../../assets/ico/code.svg";
+import pageIco from "../../assets/ico/page.svg";
 import {Fade} from "react-reveal";
 
 class Works extends Component {
@@ -19,8 +21,8 @@ class Works extends Component {
                 techs: ['all', 'react', 'redux'],
                 imgSrc: sotialWorkImg,
                 discription: 'Studying project, creating Social network using React',
-                gitLink: 'http:/',
-                codeLink: 'code:/'
+                gitLink: 'https://benedikt89.github.io/Social-Network-Training',
+                codeLink: 'https://github.com/Benedikt89/Social-Network-Training'
             },
             {
                 id: 302,
@@ -30,13 +32,13 @@ class Works extends Component {
                 imgSrc: organizerWorkImg,
                 discription: 'Studying task to create online organizer with API',
                 gitLink: 'http:/',
-                codeLink: 'code:/',
+                codeLink: 'https://github.com/Benedikt89/Todolist-home-station',
             },
             {
                 id: 403,
                 title: 'Node server',
                 displaying: true,
-                techs: ['all', 'react', 'redux', 'css'],
+                techs: ['all', 'redux'],
                 imgSrc: nodeSrverImg,
                 discription: 'asdasdas asd adsf sdf sdf sdf sdf sdfsefwef',
                 gitLink: 'http:/',
@@ -44,23 +46,23 @@ class Works extends Component {
             },
             {
                 id: 504,
-                title: 'Bacery Shop',
+                title: 'Bakery Shop',
                 displaying: true,
-                techs: ['all', 'react', 'redux', 'css'],
+                techs: ['all', 'redux', 'css'],
                 imgSrc: bakeryShopImg,
                 discription: 'Helping Friend to do simple Layout on his shop',
-                gitLink: 'http:/',
-                codeLink: 'code:/',
+                gitLink: 'http://93.85.88.35/',
+                codeLink: 'https://github.com/ice-ivanov/DjangoPizzaShop',
             },
             {
                 id: 605,
                 title: 'Dog-Game',
                 displaying: true,
-                techs: ['all', 'react'],
+                techs: ['all', 'react', 'redux'],
                 imgSrc: dogGameImg,
                 discription: 'Moving simple html game to react, redux and thunk',
                 gitLink: 'http:/',
-                codeLink: 'code:/',
+                codeLink: 'https://github.com/Benedikt89/dog-game',
             },
             {
                 id: 706,
@@ -69,8 +71,8 @@ class Works extends Component {
                 techs: ['all', 'react', 'redux'],
                 imgSrc: counterSrverImg,
                 discription: 'Task to create simple asynch counter using redux and thunk',
-                gitLink: 'http:/',
-                codeLink: 'code:/',
+                gitLink: 'https://benedikt89.github.io/counter',
+                codeLink: 'https://github.com/Benedikt89/counter',
             },
         ],
         selectedFilter: 'all',
@@ -98,13 +100,13 @@ class Works extends Component {
                         backgroundPosition: 'top center',
                         backgroundRepeat: 'no-repeat',
                     }}  className={style.projectImg}>
-                        <h4>{i.title}</h4>
+                        <span className={style.title}>{i.title}</span>
                     </div>
                     <div className={style.projectContent}>
                         <span> {i.discription}</span>
                         <div className={style.containerLinks}>
-                            <span className={style.link}> code </span>
-                            <span className={style.link}> project </span>
+                            <a href={i.codeLink} className={style.link}><img src={codeIco}/></a>
+                            <a href={i.gitLink} className={style.link}><img src={pageIco}/></a>
                         </div>
                     </div>
                 </div>

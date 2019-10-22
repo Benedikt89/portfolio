@@ -7,6 +7,8 @@ import skypeIco from './../../assets/ico/Circles-Skype.ico';
 
 class Footer extends Component {
     render() {
+
+
         return (
             <div  className={style.container}>
                 <div className={style.container}>
