@@ -64,7 +64,7 @@
 .containerCol > span {
     font-size: 1.2rem;
 }
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .containerCol {
         max-width: 100%;
         margin-top: 5rem;

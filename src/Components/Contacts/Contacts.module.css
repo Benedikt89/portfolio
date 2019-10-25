@@ -26,6 +26,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.table > * tr{
-    margin-left: 25px;
+.table > div{
+    display: flex;
+}
+.table > * span{
+    margin-left: 45px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.table > * a{
+    text-decoration:none;
+    color: #e6e6e6;
 }

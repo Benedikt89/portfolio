@@ -14,32 +14,32 @@ class Contacts extends Component {
                         <h2 className=''>CONTACTS</h2>
                         <div className={style.containerCol}>
                             <table className={style.table}>
-                            <tr>
-                                <td>
+                            <div>
+                                <span>
                                     CV
-                                </td>
-                                <td>
-                                    <a>https://github.com/Benedikt89</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>GIT</td>
-                                <td>
-                                    <a>https://github.com/Benedikt89</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Phone</td>
-                                <td>
+                                </span>
+                                <span>
+                                    <a href={'https://github.com/Benedikt89'}>https://github.com/Benedikt89</a>
+                                </span>
+                            </div>
+                            <div>
+                                <span>GIT</span>
+                                <span>
+                                    <a href={'https://github.com/Benedikt89'}>https://github.com/Benedikt89</a>
+                                </span>
+                            </div>
+                            <div>
+                                <span>Phone</span>
+                                <span>
                                     <a>+375 29 3743228</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td>
+                                </span>
+                            </div>
+                            <div>
+                                <span>Email</span>
+                                <span>
                                     <a>constantine.kostka@gmail.com</a>
-                                </td>
-                            </tr>
+                                </span>
+                            </div>
                             </table>
                         </div>
                         </div>

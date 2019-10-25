@@ -20,9 +20,10 @@ class AdditionalSkills extends Component {
                             <hr/>
                             <div className={style.container}>
                                 <div className={style.containerCol}>
-                                    Story development
+                                    Languages
                                     <span>
-                                    Creating and supporting project documentation.
+                                    English middle.
+                                        Russian native.
                                 </span>
                                 </div>
                                 <div className={style.containerCol}>

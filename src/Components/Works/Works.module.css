@@ -50,6 +50,7 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+
 }
 .projectImg:before{
     content: '';
@@ -60,11 +61,21 @@
     height: 300px;
     background-color: rgba(255,255,255,0.5);
     z-index: 32;
+    transition: transform 2s, filter 1s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(100%);
+}
+.projectImg:hover:before{
+    filter: brightness(60%);
 }
 .title {
-    z-index: 44;
+    z-index: 45;
     text-shadow: 1px 1px 2px black, 0 0 1em #3d3f50;
     cursor: pointer;
+}
+.title > a{
+    text-decoration: none;
+    color: #FFFFFF;
 }
 .title:hover{
     text-shadow: 1px 1px 3px black, 0 0 1em #1f1d50;
@@ -158,6 +169,7 @@
         justify-content: center;
     }
     .projectWrapper {
+        margin-bottom: 25px;
         width: 90%;
     }
 }

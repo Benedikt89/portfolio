@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import style from './Skills.module.css';
-import BgPict from './../../assets/images/black-city-backgrounds-powerpoint.jpg';
 import reactLogo from './../../assets/ico/React.ico';
 import htmlLogo from './../../assets/ico/iconfinder_html_169775.png';
 import jsLogo from './../../assets/ico/iconfinder_js_282802.ico';
@@ -29,38 +28,39 @@ class Skills extends Component {
                 id: 101,
                 title: 'React',
                 imgSrc: reactLogo,
-                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim...',
-            },
-            {
-                id: 102,
-                title: 'JS',
-                imgSrc: jsLogo,
-                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-            },
-            {
-                id: 103,
-                title: 'CSS',
-                imgSrc: cssLogo,
-                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-            },
-            {
-                id: 104,
-                title: 'TS',
-                imgSrc: tsLogo,
-                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
-            },
-            {
-                id: 105,
-                title: 'HTML',
-                imgSrc: htmlLogo,
-                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                experience: 'Worked with projects with ReactJS for last six months. Starting from First to last Component',
             },
             {
                 id: 106,
                 title: 'Redux',
                 imgSrc: reactLogo,
-                experience: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod',
+                experience: 'Used to work with Redux state management library',
             },
+            {
+                id: 104,
+                title: 'Thunk',
+                imgSrc: tsLogo,
+                experience: 'Composes redux library with thunk middleware to work with API.',
+            },
+            {
+                id: 102,
+                title: 'JS',
+                imgSrc: jsLogo,
+                experience: 'Have experience with native JS on projects running on legacy code.',
+            },
+            {
+                id: 103,
+                title: 'CSS',
+                imgSrc: cssLogo,
+                experience: 'Used ClassNames in react and css modules. Also worked with bootstrap library.',
+            },
+            {
+                id: 105,
+                title: 'HTML',
+                imgSrc: htmlLogo,
+                experience: 'Have some knowledge about HTML.',
+            },
+
         ]
 
     };

@@ -32,9 +32,8 @@ class About extends Component {
                             </h2>
                             <h5>An junior React Developer from Minsk</h5>
                             <article>
-                                I design and develop services , specializing in creating
-                                stylish, modern websites, web services and online stores.
-                                Check out my Portfolio
+                                I used to develop services,
+                                online stores and single-page apps using react-redux stack of technologies.
                             </article>
                             </Fade>
                             <div className={style.containerIform}>

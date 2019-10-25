@@ -31,19 +31,19 @@ class Works extends Component {
                 techs: ['all', 'react', 'redux', 'css'],
                 imgSrc: organizerWorkImg,
                 discription: 'Studying task to create online organizer with API',
-                gitLink: 'http:/',
+                gitLink: null,
                 codeLink: 'https://github.com/Benedikt89/Todolist-home-station',
             },
-            {
-                id: 403,
-                title: 'Node server',
-                displaying: true,
-                techs: ['all', 'redux'],
-                imgSrc: nodeSrverImg,
-                discription: 'asdasdas asd adsf sdf sdf sdf sdf sdfsefwef',
-                gitLink: 'http:/',
-                codeLink: 'code:/'
-            },
+            // {
+            //     id: 403,
+            //     title: 'Node server',
+            //     displaying: true,
+            //     techs: ['all', 'redux'],
+            //     imgSrc: nodeSrverImg,
+            //     discription: 'asdasdas asd adsf sdf sdf sdf sdf sdfsefwef',
+            //     gitLink: 'http:/',
+            //     codeLink: 'code:/'
+            // },
             {
                 id: 504,
                 title: 'Bakery Shop',
@@ -81,7 +81,7 @@ class Works extends Component {
 
     filterSelect = (filter) => {
         let displayingCards = this.state.worksItems.map( wi => {
-            if (wi.techs.includes(filter)) {
+            if (wi.techs.some(el => el === filter)) {
                 return {...wi, displaying: true}
             } else {
                 return {...wi, displaying: false}
@@ -100,13 +100,13 @@ class Works extends Component {
                         backgroundPosition: 'top center',
                         backgroundRepeat: 'no-repeat',
                     }}  className={style.projectImg}>
-                        <span className={style.title}>{i.title}</span>
+                        <span className={style.title}><a href={i.codeLink} >{i.title}</a></span>
                     </div>
                     <div className={style.projectContent}>
                         <span> {i.discription}</span>
                         <div className={style.containerLinks}>
                             <a href={i.codeLink} className={style.link}><img src={codeIco}/></a>
-                            <a href={i.gitLink} className={style.link}><img src={pageIco}/></a>
+                            {i.gitLink&&<a href={i.gitLink} className={style.link}><img src={pageIco}/></a>}
                         </div>
                     </div>
                 </div>
