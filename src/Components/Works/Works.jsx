@@ -61,7 +61,7 @@ class Works extends Component {
                 techs: ['all', 'react', 'redux'],
                 imgSrc: dogGameImg,
                 discription: 'Moving simple html game to react, redux and thunk',
-                gitLink: 'http:/',
+                gitLink: 'https://benedikt89.github.io/dog-game/',
                 codeLink: 'https://github.com/Benedikt89/dog-game',
             },
             {
