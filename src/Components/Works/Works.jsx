@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import style from './Works.module.css';
-import baseImg from '../../assets/images/work3.jpg';
+import baseImg from '../../assets/images/work4.jpg';
 import codeIco from "../../assets/ico/code.svg";
 import pageIco from "../../assets/ico/page.svg";
 import {Fade} from "react-reveal";
@@ -88,6 +88,7 @@ class Works extends Component {
         getWorksImages().then((res)=>{
             this.setState({
                 fetching: false,
+                bgPict: res.BgPictWorks,
                 worksItems: [
                     {
                         id: 201,
@@ -105,8 +106,8 @@ class Works extends Component {
                         displaying: true,
                         techs: ['all', 'react', 'redux', 'css'],
                         imgSrc: res.organizerWorkImg,
-                        discription: 'Studying task to create online organizer with API',
-                        gitLink: null,
+                        discription: 'Studying task to create online organizer with API and Drag&Drop',
+                        gitLink: 'https://benedikt89.github.io/Todolist-home-station',
                         codeLink: 'https://github.com/Benedikt89/Todolist-home-station',
                     },
                     // {
@@ -182,8 +183,8 @@ class Works extends Component {
     render() {
 
         let workItems = this.state.worksItems.map(i =>
-            <Fade top opposite when={i.displaying&&!this.state.fetching}>
-                <div className={style.projectWrapper} key={i.id}>
+            <Fade key={i.id} top opposite when={i.displaying&&!this.state.fetching}>
+                <div className={style.projectWrapper}>
                     <div style={{
                         backgroundImage: `url(${i.imgSrc})`,
                         backgroundPosition: 'top center',
@@ -205,7 +206,8 @@ class Works extends Component {
         return (
             <div className={style.worksBanner} id={"works"}>
                 <div style={{
-                    backgroundImage: `url(${this.state.bgPict})` }}>
+                    backgroundImage: `url(${this.state.bgPict})`,
+                }}>
                     <div className={style.worksContent}>
                         <div>
                             <h2>LATEST WORKS</h2>

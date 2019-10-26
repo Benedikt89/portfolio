@@ -78,9 +78,10 @@
 .btnMenu:after {
     content: "";
     position: absolute;
-    width: 40%;
-    bottom: 0;
-    height: 25px;
+    width: 53%;
+    bottom: 8px;
+    right: 19px;
+    height: 33px;
     z-index: -1;
     background-color: #00004b;
     box-shadow: 0px 0px 5px 0px #00004b;

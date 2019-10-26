@@ -29,6 +29,7 @@
     right: 0;
     left: 0;
     bottom: 0;
+    background-color: black;
 }
 .container {
     composes: container from './../../App.css';

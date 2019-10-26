@@ -63,10 +63,10 @@
     z-index: 32;
     transition: transform 2s, filter 1s ease-in-out;
     transform-origin: center center;
-    filter: brightness(100%);
+    filter: brightness(30%);
 }
 .projectImg:hover:before{
-    filter: brightness(60%);
+    filter: brightness(0%);
 }
 .title {
     z-index: 45;
