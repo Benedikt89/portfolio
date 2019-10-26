@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "464b8f58e3d88d7ac5182d058795f34a",
+    "revision": "79d01b272509578479a29fe36448791c",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "98637ae4503cc8c4554c",
-    "url": "/portfolio/static/css/main.3fd47b5b.chunk.css"
+    "revision": "d4eb080fe1cb9b322b34",
+    "url": "/portfolio/static/css/main.cb434111.chunk.css"
   },
   {
     "revision": "65203865954f5b83559b",
     "url": "/portfolio/static/js/2.98f743d1.chunk.js"
   },
   {
-    "revision": "98637ae4503cc8c4554c",
-    "url": "/portfolio/static/js/main.ce2b929a.chunk.js"
+    "revision": "d4eb080fe1cb9b322b34",
+    "url": "/portfolio/static/js/main.55d2ef27.chunk.js"
   },
   {
     "revision": "76aa8cbd67b5c937ec2c",
@@ -44,12 +44,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/avtar-01.435ac90e.jpg"
   },
   {
+    "revision": "5d294c4e8fcc656fb582132f2b06c462",
+    "url": "/portfolio/static/media/bakeryShopImg.5d294c4e.png"
+  },
+  {
     "revision": "183ca84cd08f8641335ce73e78d55d0e",
     "url": "/portfolio/static/media/black-city-backgrounds-powerpoint.183ca84c.jpg"
   },
   {
     "revision": "5f23ba31d8db199a5984581855d16b85",
     "url": "/portfolio/static/media/code.5f23ba31.svg"
+  },
+  {
+    "revision": "411b9a8e0dd780da6cc1d6687f6f364b",
+    "url": "/portfolio/static/media/counterSrverImg.411b9a8e.png"
   },
   {
     "revision": "416809f6e95e748d1769111a3c4c06ff",
@@ -76,27 +84,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/page.6d1ffe04.svg"
   },
   {
+    "revision": "291e49066e630c4da38f58ccf24dce16",
+    "url": "/portfolio/static/media/sotialWorkImg.291e4906.png"
+  },
+  {
     "revision": "5b450147628bb059b8be7afa6d60ca98",
     "url": "/portfolio/static/media/woodBg.5b450147.jpg"
   },
   {
     "revision": "03e007192053b3cd68101e215aee4b9f",
-    "url": "/portfolio/static/media/work2.03e00719.jpg"
-  },
-  {
-    "revision": "1125a9265663f1774937019ad29369f6",
-    "url": "/portfolio/static/media/work3.1125a926.jpg"
-  },
-  {
-    "revision": "0c2df4aa6570360471f8839c90acf4e5",
-    "url": "/portfolio/static/media/work4.0c2df4aa.jpg"
+    "url": "/portfolio/static/media/work4.03e00719.jpg"
   },
   {
     "revision": "46a6d9515db85e15091f7b4accaced77",
     "url": "/portfolio/static/media/work5.46a6d951.jpg"
-  },
-  {
-    "revision": "5d294c4e8fcc656fb582132f2b06c462",
-    "url": "/portfolio/static/media/work6.5d294c4e.png"
   }
 ]);
