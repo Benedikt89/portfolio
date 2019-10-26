@@ -18,7 +18,7 @@ class Main extends Component {
                 <Header/>
                 <Home/>
 
-                <body>
+                <div>
                     <StickyBar/>
                     <About/>
                     <Skills/>
@@ -27,7 +27,7 @@ class Main extends Component {
                     <Contacts/>
 
                     <Footer/>
-                </body>
+                </div>
 
             </div>
         );

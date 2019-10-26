@@ -14,18 +14,25 @@
     border-left: 3px solid #8f857d;
     box-shadow: -3px 0px 3px -3px #8f857d;
 }
+.discription > div {
+    min-height: 4rem;
+}
 .container {
     composes: container from './../../App.css';
 }
 
 .downloadBtn {
     background-color: rgba(0,0,0,0);
+    text-decoration: none;
     padding: 8px;
     border: 1px solid #8f857d;
     border-radius: 3px;
     font-size: 20px;
     color: white;
     margin-top: 20px;
+}
+.downloadBtn:hover{
+    border: 1px solid #FFFFFF;
 }
 .title {
     text-shadow: #8f857d;

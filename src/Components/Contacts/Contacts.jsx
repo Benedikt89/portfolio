@@ -13,7 +13,7 @@ class Contacts extends Component {
                         <div className={style.container}>
                         <h2 className=''>CONTACTS</h2>
                         <div className={style.containerCol}>
-                            <table className={style.table}>
+                            <div className={style.table}>
                             <div>
                                 <span>
                                     CV
@@ -29,18 +29,24 @@ class Contacts extends Component {
                                 </span>
                             </div>
                             <div>
-                                <span>Phone</span>
+                                <span>Velcom</span>
                                 <span>
-                                    <a>+375 29 3743228</a>
+                                    <a>+375 29 374-32-28</a>
                                 </span>
                             </div>
+                                <div>
+                                    <span>MTS</span>
+                                    <span>
+                                    <a>+375 33 685-81-21</a>
+                                </span>
+                                </div>
                             <div>
                                 <span>Email</span>
                                 <span>
                                     <a>constantine.kostka@gmail.com</a>
                                 </span>
                             </div>
-                            </table>
+                            </div>
                         </div>
                         </div>
                     </div>

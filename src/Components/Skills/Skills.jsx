@@ -69,7 +69,7 @@ class Skills extends Component {
 
         let skillItems = this.state.skillsItems.map(i =>
             <div className={style.item} key={i.id}>
-                <Fade top>
+                <Fade>
                 <div className={style.imageContainer}>
                     <div
                         style={{

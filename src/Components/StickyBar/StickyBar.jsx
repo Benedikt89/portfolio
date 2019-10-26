@@ -55,6 +55,7 @@ class StickyBar extends Component {
                                   smooth={true}
                                   offset={-70}
                                   duration= {1500}
+                                  onClick={this.hideMenu}
                                   className={style.btn}>HOME</Link>
                             <Link to="about"
                                   activeClass={style.btnActive}
@@ -62,6 +63,7 @@ class StickyBar extends Component {
                                   smooth={true}
                                   offset={-70}
                                   duration= {1500}
+                                  onClick={this.hideMenu}
                                   className={style.btn}>ABOUT</Link>
                             <Link to="skills"
                                   activeClass={style.btnActive}
@@ -69,6 +71,7 @@ class StickyBar extends Component {
                                   smooth={true}
                                   offset={-70}
                                   duration= {1500}
+                                  onClick={this.hideMenu}
                                   className={style.btn}>SKILLS</Link>
                             <Link to="works"
                                   activeClass={style.btnActive}
@@ -76,6 +79,7 @@ class StickyBar extends Component {
                                   smooth={true}
                                   offset={-70}
                                   duration= {1500}
+                                  onClick={this.hideMenu}
                                   className={style.btn}>WORKS</Link>
                             <Link to="contacts"
                                   activeClass={style.btnActive}
@@ -83,6 +87,7 @@ class StickyBar extends Component {
                                   smooth={true}
                                   offset={-70}
                                   duration= {1500}
+                                  onClick={this.hideMenu}
                                   className={style.btn}>CONTACTS</Link>
                         </Fade>
                     </div>
