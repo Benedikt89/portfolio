@@ -1,10 +1,10 @@
 import BgPict from './images/home.jpg';
 import BgPictWorks from './images/woodBg.jpg'
-import sotialWorkImg from "./images/work2.jpg";
-import organizerWorkImg from "./images/work3.jpg";
-import counterSrverImg from "./images/work5.jpg";
+import sotialWorkImg from "./images/sotialWorkImg.png";
+import organizerWorkImg from "./images/work5.jpg";
+import counterSrverImg from "./images/counterSrverImg.png";
 import nodeSrverImg from "./images/work4.jpg";
-import bakeryShopImg from "./images/work6.png";
+import bakeryShopImg from "./images/bakeryShopImg.png";
 import dogGameImg from "./images/dog-centre.jpg";
 
 export const getHomePageBg = () => {
