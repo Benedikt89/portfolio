@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "79d01b272509578479a29fe36448791c",
+    "revision": "027397ece27ac060be4c02bb57560db9",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "d4eb080fe1cb9b322b34",
-    "url": "/portfolio/static/css/main.cb434111.chunk.css"
+    "revision": "0f1223240d676ec0efdd",
+    "url": "/portfolio/static/css/main.3eef1c4f.chunk.css"
   },
   {
     "revision": "65203865954f5b83559b",
     "url": "/portfolio/static/js/2.98f743d1.chunk.js"
   },
   {
-    "revision": "d4eb080fe1cb9b322b34",
-    "url": "/portfolio/static/js/main.55d2ef27.chunk.js"
+    "revision": "0f1223240d676ec0efdd",
+    "url": "/portfolio/static/js/main.2e98aaca.chunk.js"
   },
   {
     "revision": "76aa8cbd67b5c937ec2c",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/React.46fc3198.ico"
   },
   {
-    "revision": "435ac90e9477c008d56a4f73c608eaf4",
-    "url": "/portfolio/static/media/avtar-01.435ac90e.jpg"
+    "revision": "7a170d9c0df6af314b8c269afa06f69f",
+    "url": "/portfolio/static/media/avtar-01.7a170d9c.jpg"
   },
   {
     "revision": "5d294c4e8fcc656fb582132f2b06c462",

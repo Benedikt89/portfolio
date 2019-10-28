@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cb434111.chunk.css",
-    "main.js": "/portfolio/static/js/main.55d2ef27.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.55d2ef27.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.3eef1c4f.chunk.css",
+    "main.js": "/portfolio/static/js/main.2e98aaca.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2e98aaca.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
     "static/js/2.98f743d1.chunk.js": "/portfolio/static/js/2.98f743d1.chunk.js",
     "static/js/2.98f743d1.chunk.js.map": "/portfolio/static/js/2.98f743d1.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.cc05a4f3e4bab4dceb27e0c4bd611e3c.js": "/portfolio/precache-manifest.cc05a4f3e4bab4dceb27e0c4bd611e3c.js",
+    "precache-manifest.33d118fcfcab3a516d6825f8c06ceb29.js": "/portfolio/precache-manifest.33d118fcfcab3a516d6825f8c06ceb29.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.cb434111.chunk.css.map": "/portfolio/static/css/main.cb434111.chunk.css.map",
+    "static/css/main.3eef1c4f.chunk.css.map": "/portfolio/static/css/main.3eef1c4f.chunk.css.map",
     "static/media/Circles-Facebook.ico": "/portfolio/static/media/Circles-Facebook.dbe77fc3.ico",
     "static/media/Circles-GitHub.ico": "/portfolio/static/media/Circles-GitHub.9dd1160b.ico",
     "static/media/Circles-LinkedIn.ico": "/portfolio/static/media/Circles-LinkedIn.90293d82.ico",
     "static/media/Circles-Skype.ico": "/portfolio/static/media/Circles-Skype.90a8c4de.ico",
     "static/media/React.ico": "/portfolio/static/media/React.46fc3198.ico",
-    "static/media/avtar-01.jpg": "/portfolio/static/media/avtar-01.435ac90e.jpg",
+    "static/media/avtar-01.jpg": "/portfolio/static/media/avtar-01.7a170d9c.jpg",
     "static/media/bakeryShopImg.png": "/portfolio/static/media/bakeryShopImg.5d294c4e.png",
     "static/media/black-city-backgrounds-powerpoint.jpg": "/portfolio/static/media/black-city-backgrounds-powerpoint.183ca84c.jpg",
     "static/media/code.svg": "/portfolio/static/media/code.5f23ba31.svg",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.e92c632a.js",
     "static/js/2.98f743d1.chunk.js",
-    "static/css/main.cb434111.chunk.css",
-    "static/js/main.55d2ef27.chunk.js"
+    "static/css/main.3eef1c4f.chunk.css",
+    "static/js/main.2e98aaca.chunk.js"
   ]
 }
