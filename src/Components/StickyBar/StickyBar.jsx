@@ -26,7 +26,7 @@ class StickyBar extends Component {
 
     handleScroll = () => {
         const currentScrollPos = window.pageYOffset;
-        const visible = 1600 < currentScrollPos;
+        const visible = 500 < currentScrollPos;
 
         this.setState({
             prevScrollpos: currentScrollPos,
