@@ -29,10 +29,8 @@
 
 .downloadBtn {
     background-color: rgba(0,0,0,0);
-    text-decoration: none;
     padding: 8px;
     border: 1px solid #8f857d;
-    border-radius: 3px;
     font-size: 20px;
     color: white;
     margin-top: 20px;

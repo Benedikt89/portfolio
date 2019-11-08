@@ -90,7 +90,7 @@ button {
     text-decoration: none;
     margin: 2px 0;
     border: solid 1px transparent;
-    border-radius: 1px;
+    border-radius: 3px;
     padding: 8px 20px;
     box-sizing: border-box;
     max-height: 3rem;
