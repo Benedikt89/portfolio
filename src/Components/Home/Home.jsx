@@ -1,25 +1,27 @@
 import React, {Component} from 'react';
 import style from './Home.module.css';
-import { getHomePageBg } from '../../assets/media.service';
+import BgPict from './../../assets/images/home.jpg';
 
 
 class Home extends Component {
 
     state = {
         isFetching: false,
-        bgPict: null,
+        bgPict: 'https://steamuserimages-a.akamaihd.net/ugc/918040807623446845/657A1F646213A86D0AC6D5670408B769441D17AC/',
         opacity: 0
     };
 
-    componentDidMount() {
-        this.setState({isFetching: true});
-        getHomePageBg().then((res)=>{
-            this.setState({isFetching: false, bgPict: res, opacity: 1})
-        });
+    bgImage = new Image();
 
+    componentDidMount() {
+        this.bgImage.src = BgPict;
+        this.bgImage.onload = () => {
+            this.setState({isFetching: false, bgPict: this.bgImage.src, opacity: 1});
+        }
     }
 
     render() {
+
         return (
             <div className={style.banner} id={"home"}>
                 <div style={{

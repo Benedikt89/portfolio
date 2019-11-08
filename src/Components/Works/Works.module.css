@@ -108,6 +108,9 @@
     margin: 5px;
     z-index: 3;
 }
+.filterBtn:hover{
+    border: none;
+}
 .filterBtn:before{
     content: "";
     position: absolute;
@@ -116,9 +119,9 @@
     height: 15px;
     z-index: -1;
     background-color: #00004b;
-    box-shadow: 0px 0px 5px 0px #00004b;
-    -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
-    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    box-shadow: 0 0 5px 0 #00004b;
+    -webkit-transition: width 0.5s, height 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
 .filterBtn:hover:before {
     height: 100%;
@@ -143,9 +146,9 @@
     width: 25px;
     z-index: -1;
     background-color: rgba(0, 0, 62, 0.76);
-    box-shadow: 0px 0px 5px 0px #00004b;
-    -webkit-transition: width 1s, height 1s, background-color 1s, -webkit-transform 1s;
-    transition: width 1s, height 1s, background-color 1s, transform 1s;
+    box-shadow: 0 0 5px 0 #00004b;
+    -webkit-transition: width 0.5s, height 0.5s, background-color 0.5s, -webkit-transform 0.5s;
+    transition: width 0.5s, height 0.5s, background-color 0.5s, transform 0.5s;
 }
 .link:hover:before {
     height: 65px;

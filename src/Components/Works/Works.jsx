@@ -83,79 +83,6 @@ class Works extends Component {
         fetching: false,
     };
 
-    componentDidMount() {
-        this.setState({fetching: true});
-        getWorksImages().then((res)=>{
-            this.setState({
-                fetching: false,
-                bgPict: res.BgPictWorks,
-                worksItems: [
-                    {
-                        id: 201,
-                        title: 'Social-Network',
-                        displaying: true,
-                        techs: ['all', 'react', 'redux'],
-                        imgSrc: res.sotialWorkImg,
-                        discription: 'Studying project, creating Social network using React',
-                        gitLink: 'https://benedikt89.github.io/Social-Network-Training',
-                        codeLink: 'https://github.com/Benedikt89/Social-Network-Training'
-                    },
-                    {
-                        id: 302,
-                        title: 'Organizer Online',
-                        displaying: true,
-                        techs: ['all', 'react', 'redux', 'css'],
-                        imgSrc: res.organizerWorkImg,
-                        discription: 'Studying task to create online organizer with API and Drag&Drop',
-                        gitLink: 'https://benedikt89.github.io/Todolist-home-station',
-                        codeLink: 'https://github.com/Benedikt89/Todolist-home-station',
-                    },
-                    // {
-                    //     id: 403,
-                    //     title: 'Node server',
-                    //     displaying: true,
-                    //     techs: ['all', 'redux'],
-                    //     imgSrc: nodeSrverImg,
-                    //     discription: 'asdasdas asd adsf sdf sdf sdf sdf sdfsefwef',
-                    //     gitLink: 'http:/',
-                    //     codeLink: 'code:/'
-                    // },
-                    {
-                        id: 504,
-                        title: 'Bakery Shop',
-                        displaying: true,
-                        techs: ['all', 'redux', 'css'],
-                        imgSrc: res.bakeryShopImg,
-                        discription: 'Helping Friend to do simple Layout on his shop',
-                        gitLink: 'http://93.85.88.35/',
-                        codeLink: 'https://github.com/ice-ivanov/DjangoPizzaShop',
-                    },
-                    {
-                        id: 605,
-                        title: 'Dog-Game',
-                        displaying: true,
-                        techs: ['all', 'react', 'redux'],
-                        imgSrc: res.dogGameImg,
-                        discription: 'Moving simple html game to react, redux and thunk',
-                        gitLink: 'https://benedikt89.github.io/dog-game/',
-                        codeLink: 'https://github.com/Benedikt89/dog-game',
-                    },
-                    {
-                        id: 706,
-                        displaying: true,
-                        title: 'Counter',
-                        techs: ['all', 'react', 'redux'],
-                        imgSrc: res.counterSrverImg,
-                        discription: 'Task to create simple asynch counter using redux and thunk',
-                        gitLink: 'https://benedikt89.github.io/counter',
-                        codeLink: 'https://github.com/Benedikt89/counter',
-                    },
-                ],
-            })
-        });
-
-    }
-
     filterSelect = (filter) => {
 
         new Promise((resolve)=> {
@@ -183,7 +110,7 @@ class Works extends Component {
     render() {
 
         let workItems = this.state.worksItems.map(i =>
-            <Fade key={i.id} top opposite when={i.displaying&&!this.state.fetching}>
+            <Fade key={i.id} top opposite when={i.displaying}>
                 <div className={style.projectWrapper}>
                     <div style={{
                         backgroundImage: `url(${i.imgSrc})`,
@@ -206,7 +133,7 @@ class Works extends Component {
         return (
             <div className={style.worksBanner} id={"works"}>
                 <div style={{
-                    backgroundImage: `url(${this.state.bgPict})`,
+                    backgroundColor: `rgb(6, 6, 6)`,
                 }}>
                     <div className={style.worksContent}>
                         <div>
@@ -246,9 +173,9 @@ class Works extends Component {
 
 
                         <div className={style.container}>
-                            <div className={style.containerCards}>
+                            <Fade className={style.containerCards}>
                                 {workItems}
-                            </div>
+                            </Fade>
                         </div>
 
                     </div>

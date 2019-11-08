@@ -1,5 +1,4 @@
 import BgPict from './images/home.jpg';
-import BgPictWorks from './images/woodBg.jpg'
 import sotialWorkImg from "./images/sotialWorkImg.png";
 import organizerWorkImg from "./images/work5.jpg";
 import counterSrverImg from "./images/counterSrverImg.png";
@@ -11,13 +10,13 @@ export const getHomePageBg = () => {
     return new Promise((resolve)=>{
         setTimeout(()=>{
             resolve(BgPict);
-        }, 750);
+        }, 50);
     })
 };
 export const getWorksImages = () => {
     return new Promise((resolve)=>{
         setTimeout(()=>{
-            resolve({BgPictWorks, sotialWorkImg, organizerWorkImg, counterSrverImg, nodeSrverImg, bakeryShopImg, dogGameImg});
-        }, 50);
+            resolve({ sotialWorkImg, organizerWorkImg, counterSrverImg, nodeSrverImg, bakeryShopImg, dogGameImg});
+        }, 1150);
     })
 };

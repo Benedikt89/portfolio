@@ -5,21 +5,20 @@ import htmlLogo from './../../assets/ico/iconfinder_html_169775.png';
 import jsLogo from './../../assets/ico/iconfinder_js_282802.ico';
 import cssLogo from './../../assets/ico/iconfinder_icon-12-file-css_314563.png';
 import tsLogo from './../../assets/ico/iconfinder_icon-76-document-file-html_315697.ico';
-import Particles from 'react-particles-js';
 import {Fade} from "react-reveal";
 
 
-const particlesOpt = {
-    particles : {
-        number: {
-            value: 120,
-            density: {
-                enable: true,
-                value_area: 800,
-            }
-        }
-    }
-};
+// const particlesOpt = {
+//     particles : {
+//         number: {
+//             value: 120,
+//             density: {
+//                 enable: true,
+//                 value_area: 800,
+//             }
+//         }
+//     }
+// };
 
 class Skills extends Component {
     state = {
@@ -99,7 +98,6 @@ class Skills extends Component {
                     // backgroundImage: `url(${BgPict})`
                 }}
                      className={style.parallaxImg}>
-                    <Particles className={style.particles} params={particlesOpt}/>
                     <div className={style.skillsContent}>
                         <div className={style.container}>
                             <h2>PROFESSIONAL SKILLS</h2>
