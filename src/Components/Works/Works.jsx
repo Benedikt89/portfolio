@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import style from './Works.module.css';
-import baseImg from '../../assets/images/work4.jpg';
 import codeIco from "../../assets/ico/code.svg";
 import pageIco from "../../assets/ico/page.svg";
 import {Fade} from "react-reveal";
-import {getWorksImages} from "../../assets/media.service";
-
+import sotialWorkImg from "./../../assets/images/sotialWorkImg.png";
+import organizerWorkImg from "./../../assets/images/work5.jpg";
+import counterSrverImg from "./../../assets/images/counterSrverImg.png";
+import bakeryShopImg from "./../../assets/images/bakeryShopImg.png";
+import dogGameImg from "./../../assets/images/dog-centre.jpg";
 
 class Works extends Component {
     state = {
@@ -15,7 +17,7 @@ class Works extends Component {
                 title: 'Social-Network',
                 displaying: true,
                 techs: ['all', 'react', 'redux'],
-                imgSrc: baseImg,
+                imgSrc: sotialWorkImg,
                 discription: 'Studying project, creating Social network using React',
                 gitLink: 'https://benedikt89.github.io/Social-Network-Training',
                 codeLink: 'https://github.com/Benedikt89/Social-Network-Training'
@@ -25,27 +27,27 @@ class Works extends Component {
                 title: 'Organizer Online',
                 displaying: true,
                 techs: ['all', 'react', 'redux'],
-                imgSrc: baseImg,
+                imgSrc: organizerWorkImg,
                 discription: 'Studying task to create online organizer with API',
                 gitLink: 'https://benedikt89.github.io/Todolist-home-station',
                 codeLink: 'https://github.com/Benedikt89/Todolist-home-station',
             },
-            // {
-            //     id: 403,
-            //     title: 'Node server',
-            //     displaying: true,
-            //     techs: ['all', 'redux'],
-            //     imgSrc: nodeSrverImg,
-            //     discription: 'asdasdas asd adsf sdf sdf sdf sdf sdfsefwef',
-            //     gitLink: 'http:/',
-            //     codeLink: 'code:/'
-            // },
+            {
+                id: 403,
+                title: 'Pizza-shop on react',
+                displaying: true,
+                techs: ['all', 'redux', 'react', 'css'],
+                imgSrc: bakeryShopImg,
+                discription: 'Helping Friend to rebuild site of his shop using jangoApi/react-redux',
+                gitLink: 'https://github.com/Benedikt89/react-pizza-shop',
+                codeLink: 'https://github.com/Benedikt89/react-pizza-shop'
+            },
             {
                 id: 504,
                 title: 'Bakery Shop',
                 displaying: true,
                 techs: ['all', 'css'],
-                imgSrc: baseImg,
+                imgSrc: bakeryShopImg,
                 discription: 'Helping Friend to do simple Layout on his shop',
                 gitLink: 'http://93.85.88.35/',
                 codeLink: 'https://github.com/ice-ivanov/DjangoPizzaShop',
@@ -55,7 +57,7 @@ class Works extends Component {
                 title: 'Dog-Game',
                 displaying: true,
                 techs: ['all', 'react', 'redux'],
-                imgSrc: baseImg,
+                imgSrc: dogGameImg,
                 discription: 'Moving simple html game to react, redux and thunk',
                 gitLink: 'https://benedikt89.github.io/dog-game/',
                 codeLink: 'https://github.com/Benedikt89/dog-game',
@@ -65,7 +67,7 @@ class Works extends Component {
                 displaying: true,
                 title: 'Counter',
                 techs: ['all', 'react', 'redux'],
-                imgSrc: baseImg,
+                imgSrc: counterSrverImg,
                 discription: 'Task to create simple asynch counter using redux and thunk',
                 gitLink: 'https://benedikt89.github.io/counter',
                 codeLink: 'https://github.com/Benedikt89/counter',
