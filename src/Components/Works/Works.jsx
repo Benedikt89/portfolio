@@ -13,6 +13,16 @@ class Works extends Component {
     state = {
         worksItems: [
             {
+                id: 403,
+                title: 'Pizza-shop on react',
+                displaying: true,
+                techs: ['all', 'redux', 'react', 'css'],
+                imgSrc: bakeryShopImg,
+                discription: 'Helping client to rebuild site of his shop using react-redux and API',
+                gitLink: 'https://benedikt89.github.io/react-pizza-shop',
+                codeLink: 'https://github.com/Benedikt89/react-pizza-shop'
+            },
+            {
                 id: 201,
                 title: 'Social-Network',
                 displaying: true,
@@ -33,24 +43,14 @@ class Works extends Component {
                 codeLink: 'https://github.com/Benedikt89/Todolist-home-station',
             },
             {
-                id: 403,
-                title: 'Pizza-shop on react',
-                displaying: true,
-                techs: ['all', 'redux', 'react', 'css'],
-                imgSrc: bakeryShopImg,
-                discription: 'Helping Friend to rebuild site of his shop using jangoApi/react-redux',
-                gitLink: 'https://github.com/Benedikt89/react-pizza-shop',
-                codeLink: 'https://github.com/Benedikt89/react-pizza-shop'
-            },
-            {
                 id: 504,
-                title: 'Bakery Shop',
+                title: 'Tic Tac Toe',
                 displaying: true,
                 techs: ['all', 'css'],
                 imgSrc: bakeryShopImg,
-                discription: 'Helping Friend to do simple Layout on his shop',
-                gitLink: 'http://93.85.88.35/',
-                codeLink: 'https://github.com/ice-ivanov/DjangoPizzaShop',
+                discription: 'Tic Tac Toe game with random AI',
+                gitLink: 'https://github.com/Benedikt89/tic-tak-toe',
+                codeLink: 'https://github.com/Benedikt89/tic-tak-toe',
             },
             {
                 id: 605,
@@ -87,20 +87,20 @@ class Works extends Component {
 
     filterSelect = (filter) => {
 
-        new Promise((resolve)=> {
-            this.setState({fetching : true});
-            setTimeout(()=>{
-            let displayingCards = [];
-                this.state.worksItems.forEach( wi => {
-                if (wi.techs.some(el => el === filter)) {
-                    displayingCards.unshift({...wi, displaying: true})
-                } else {
-                    displayingCards.push({...wi, displaying: false})
-                }
-            });
-            resolve(displayingCards);
+        new Promise((resolve) => {
+            this.setState({fetching: true});
+            setTimeout(() => {
+                let displayingCards = [];
+                this.state.worksItems.forEach(wi => {
+                    if (wi.techs.some(el => el === filter)) {
+                        displayingCards.unshift({...wi, displaying: true})
+                    } else {
+                        displayingCards.push({...wi, displaying: false})
+                    }
+                });
+                resolve(displayingCards);
             }, 1200);
-        }).then((displayingCards)=> {
+        }).then((displayingCards) => {
             this.setState({
                 selectedFilter: filter,
                 worksItems: displayingCards,
@@ -110,27 +110,38 @@ class Works extends Component {
     };
 
     render() {
-
+        console.log('works rerender');
         let workItems = this.state.worksItems.map(i =>
-            <Fade key={i.id} top opposite when={i.displaying}>
+            <Fade key={i.id} opposite when={i.displaying}>
                 <div className={style.projectWrapper}>
                     <div style={{
                         backgroundImage: `url(${i.imgSrc})`,
                         backgroundPosition: 'top center',
                         backgroundRepeat: 'no-repeat',
-                    }}  className={style.projectImg}>
-                        <span className={style.title}><a href={i.codeLink} >{i.title}</a></span>
-                    </div>
-                    <div className={style.projectContent}>
-                        <span> {i.discription}</span>
-                        <div className={style.containerLinks}>
-                            <a href={i.codeLink} className={style.link}><img src={codeIco}/></a>
-                            {i.gitLink&&<a href={i.gitLink} className={style.link}><img src={pageIco}/></a>}
+                    }} className={style.projectImg}>
+                        <span className={style.title}>{i.title}</span>
+                        <div className={style.projectContent}>
+                            <div>
+                                <span>Watch Code</span>
+                                <a href={i.codeLink} className={style.link}>
+                                    <img src={codeIco}/>
+                                </a>
+                            </div>
+                            {i.gitLink &&
+                            <div>
+                                <span>Watch Template</span>
+                                <a href={i.gitLink} className={style.link}>
+                                    <img src={pageIco}/>
+                                </a>
+                            </div>}
+                        </div>
+                        <div className={style.projectContent}>
+                            <span> {i.discription}</span>
                         </div>
                     </div>
                 </div>
             </Fade>
-            );
+        );
 
         return (
             <div className={style.worksBanner} id={"works"}>
