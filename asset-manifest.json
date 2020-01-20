@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.27f08ab8.chunk.css",
-    "main.js": "/portfolio/static/js/main.36987570.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.36987570.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.e92c632a.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e92c632a.js.map",
-    "static/js/2.db20a37e.chunk.js": "/portfolio/static/js/2.db20a37e.chunk.js",
-    "static/js/2.db20a37e.chunk.js.map": "/portfolio/static/js/2.db20a37e.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.453274be.chunk.css",
+    "main.js": "/portfolio/static/js/main.62132f6d.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.62132f6d.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.021c856b.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.021c856b.js.map",
+    "static/js/2.a6bd8a2a.chunk.js": "/portfolio/static/js/2.a6bd8a2a.chunk.js",
+    "static/js/2.a6bd8a2a.chunk.js.map": "/portfolio/static/js/2.a6bd8a2a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.e1d9984349e91b2c210cbee73c080718.js": "/portfolio/precache-manifest.e1d9984349e91b2c210cbee73c080718.js",
+    "precache-manifest.e83da8957188b7c8b4d9a55af8964849.js": "/portfolio/precache-manifest.e83da8957188b7c8b4d9a55af8964849.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.27f08ab8.chunk.css.map": "/portfolio/static/css/main.27f08ab8.chunk.css.map",
+    "static/css/main.453274be.chunk.css.map": "/portfolio/static/css/main.453274be.chunk.css.map",
     "static/media/Circles-Facebook.ico": "/portfolio/static/media/Circles-Facebook.dbe77fc3.ico",
     "static/media/Circles-GitHub.ico": "/portfolio/static/media/Circles-GitHub.9dd1160b.ico",
     "static/media/Circles-LinkedIn.ico": "/portfolio/static/media/Circles-LinkedIn.90293d82.ico",
@@ -28,12 +28,13 @@
     "static/media/iconfinder_js_282802.ico": "/portfolio/static/media/iconfinder_js_282802.8f651f7c.ico",
     "static/media/page.svg": "/portfolio/static/media/page.6d1ffe04.svg",
     "static/media/sotialWorkImg.png": "/portfolio/static/media/sotialWorkImg.291e4906.png",
+    "static/media/tic-tac-toe.png": "/portfolio/static/media/tic-tac-toe.6544ac03.png",
     "static/media/work5.jpg": "/portfolio/static/media/work5.46a6d951.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e92c632a.js",
-    "static/js/2.db20a37e.chunk.js",
-    "static/css/main.27f08ab8.chunk.css",
-    "static/js/main.36987570.chunk.js"
+    "static/js/runtime-main.021c856b.js",
+    "static/js/2.a6bd8a2a.chunk.js",
+    "static/css/main.453274be.chunk.css",
+    "static/js/main.62132f6d.chunk.js"
   ]
 }
