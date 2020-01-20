@@ -7,19 +7,6 @@ import cssLogo from './../../assets/ico/iconfinder_icon-12-file-css_314563.png';
 import tsLogo from './../../assets/ico/iconfinder_icon-76-document-file-html_315697.ico';
 import {Fade} from "react-reveal";
 
-
-// const particlesOpt = {
-//     particles : {
-//         number: {
-//             value: 120,
-//             density: {
-//                 enable: true,
-//                 value_area: 800,
-//             }
-//         }
-//     }
-// };
-
 class Skills extends Component {
     state = {
         skillsItems: [
@@ -103,7 +90,7 @@ class Skills extends Component {
                             <h2>PROFESSIONAL SKILLS</h2>
                         </div>
 
-                        <div className={style.line}></div>
+                        <div className={style.line}> </div>
 
                         <div className={style.container}>
                             {skillItems}

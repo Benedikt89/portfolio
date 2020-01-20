@@ -30,7 +30,7 @@ class MainPict extends Component {
                 //     OTransform: `rotateX( ${ this.state.x } deg) rotateY( ${ this.state.y } deg)`,
                 // }}
                      className={style.mainPict} onMouseMove={this.onMove}>
-                    <img src={mainPict}/>
+                    <img alt="mainPicture" src={mainPict}/>
                 </div>
                 {/*<span>y={this.state.y}</span>*/}
                 {/*<span>x={this.state.x}</span>*/}

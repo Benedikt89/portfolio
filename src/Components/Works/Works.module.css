@@ -15,23 +15,11 @@
 .container
 {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 
-    box-sizing: border-box;
-    width: 100%;
-    min-height: min-content;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.containerCards
-{
     justify-content: center;
 
-    composes: container;
+    min-height: min-content;
+    composes: container from './../../App.css';
 }
 
 .projectWrapper
@@ -43,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
 
-    width: 500px;
+    width: 490px;
     height: max-content;
     margin: 10px;
     padding: 5px;
@@ -76,10 +64,8 @@
     right: 0;
     bottom: 0;
     opacity: 0;
-    -webkit-transition: .2s opacity;
-    transition: .2s opacity;
-    -webkit-transition-delay: .2s;
-    transition-delay: .2s;
+    -webkit-transition: .4s opacity;
+    transition: .4s opacity;
     z-index: 22;
 }
 
@@ -99,26 +85,21 @@
     -ms-transform: translateY(0%);
     transform: translateY(0%);
     opacity: 1;
-    -webkit-transition-delay: .1s;
-    transition-delay: .1s;
 }
 .title
 {
     z-index: 45;
-
-    cursor: pointer;
 
     text-shadow: 1px 1px 3px black, 0 0 1em #1f1d50;
 }
 
 .projectContent
 {
-    font-weight: 400;
     visibility: hidden;
+    overflow: visible;
+    justify-content: space-evenly;
 
     z-index: 45;
-
-    justify-content: space-around;
 
     text-align: center;
 
@@ -127,15 +108,25 @@
 }
 .projectContent > *
 {
-    -webkit-transform: translateY(60%);
-    -ms-transform: translateY(60%);
-    transform: translateY(60%);
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
     color: #fff;
-    margin-bottom: 10px;
     -webkit-transition: .2s all;
     transition: .2s all;
+}
+.projectDescription
+{
+    composes: projectContent;
+    margin-bottom: 10px;
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
+    -webkit-transition: .1s opacity;
+    transition: .1s opacity;
+}
+.projectDescription >span
+{
+    font-size: 1.3rem;
 }
 .filterBtnRow
 {
@@ -193,11 +184,13 @@
     height: 100%;
 }
 
+.linkWrap > span
+{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
 .link
 {
-    font-size: 2rem;
-    font-weight: bold;
-
     position: relative;
     z-index: 45;
 
@@ -208,12 +201,9 @@
     margin: 5px;
     padding: 8px 30px;
 
-    cursor: pointer;
-
     color: white;
     border: none;
     background-color: inherit;
-    transition: .2s opacity;
 }
 
 .link > img
@@ -221,11 +211,11 @@
     height: 45px;
 }
 
-.link:hover > img
+.linkWrap:hover *
 {
-    -webkit-filter: drop-shadow(0px 0px 7px rgba(0, 0, 62, .76));
-       -moz-filter: drop-shadow(0px 0px 7px rgba(0, 0, 62, .76));
-            filter: drop-shadow(0px 0px 7px rgba(0, 0, 62, .76));
+    -webkit-filter: drop-shadow(0px 0px 7px rgb(0, 0, 126));
+       -moz-filter: drop-shadow(0px 0px 7px rgb(0, 0, 126));
+            filter: drop-shadow(0px 0px 7px rgb(0, 0, 126));
 }
 
 @media (max-width: 992px)

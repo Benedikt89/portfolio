@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import style from './StickyBar.module.css';
 import {Fade} from "react-reveal";
 import menuBtn from './../../assets/ico/menu-button.png'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 class StickyBar extends Component {
 
@@ -10,7 +10,7 @@ class StickyBar extends Component {
         opened: false,
         prevScrollpos: window.pageYOffset,
         visible: true
-    }
+    };
 
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
@@ -43,7 +43,7 @@ class StickyBar extends Component {
             <div className={style.navButton}>
                 <Fade right big when={this.state.visible}>
                     <button className={style.btnMenu} onClick={this.hideMenu}>
-                        <img src={menuBtn}/>
+                        <img alt="menu" src={menuBtn}/>
                     </button>
                 </Fade>
                 <Fade when={this.state.opened}>

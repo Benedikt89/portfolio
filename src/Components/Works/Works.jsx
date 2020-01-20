@@ -1,15 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import style from './Works.module.css';
 import codeIco from "../../assets/ico/code.svg";
 import pageIco from "../../assets/ico/page.svg";
 import {Fade} from "react-reveal";
+import TransitionGroup from 'react-transition-group/TransitionGroup';
 import sotialWorkImg from "./../../assets/images/sotialWorkImg.png";
 import organizerWorkImg from "./../../assets/images/work5.jpg";
 import counterSrverImg from "./../../assets/images/counterSrverImg.png";
 import bakeryShopImg from "./../../assets/images/bakeryShopImg.png";
 import dogGameImg from "./../../assets/images/dog-centre.jpg";
+import ticTacImg from "./../../assets/images/tic-tac-toe.png";
 
-class Works extends Component {
+class Works extends React.Component {
+
     state = {
         worksItems: [
             {
@@ -47,9 +50,9 @@ class Works extends Component {
                 title: 'Tic Tac Toe',
                 displaying: true,
                 techs: ['all', 'css'],
-                imgSrc: bakeryShopImg,
-                discription: 'Tic Tac Toe game with random AI',
-                gitLink: 'https://github.com/Benedikt89/tic-tak-toe',
+                imgSrc: ticTacImg,
+                discription: 'Tic Tac Toe game with random AI and API',
+                gitLink: 'https://benedikt89.github.io/tic-tac-toe',
                 codeLink: 'https://github.com/Benedikt89/tic-tak-toe',
             },
             {
@@ -110,9 +113,10 @@ class Works extends Component {
     };
 
     render() {
-        console.log('works rerender');
-        let workItems = this.state.worksItems.map(i =>
-            <Fade key={i.id} opposite when={i.displaying}>
+        let workItems = this.state.worksItems
+            .filter( i => i.displaying)
+            .map(i =>
+            <Fade key={i.id} collapse bottom>
                 <div className={style.projectWrapper}>
                     <div style={{
                         backgroundImage: `url(${i.imgSrc})`,
@@ -121,21 +125,21 @@ class Works extends Component {
                     }} className={style.projectImg}>
                         <span className={style.title}>{i.title}</span>
                         <div className={style.projectContent}>
-                            <div>
+                            <div className={style.linkWrap}>
                                 <span>Watch Code</span>
                                 <a href={i.codeLink} className={style.link}>
-                                    <img src={codeIco}/>
+                                    <img alt='codeIco' src={codeIco}/>
                                 </a>
                             </div>
                             {i.gitLink &&
-                            <div>
+                            <div className={style.linkWrap}>
                                 <span>Watch Template</span>
                                 <a href={i.gitLink} className={style.link}>
-                                    <img src={pageIco}/>
+                                    <img alt='pageIco' src={pageIco}/>
                                 </a>
                             </div>}
                         </div>
-                        <div className={style.projectContent}>
+                        <div className={style.projectDescription}>
                             <span> {i.discription}</span>
                         </div>
                     </div>
@@ -152,7 +156,7 @@ class Works extends Component {
                         <div>
                             <h2>LATEST WORKS</h2>
                         </div>
-                        <div className={style.line}></div>
+                        <div className={style.line}> </div>
                         <div className={style.filterBtnRow}>
                             <button
                                 className={style.filterBtn}
@@ -185,11 +189,11 @@ class Works extends Component {
                         </div>
 
 
-                        <div className={style.container}>
-                            <Fade className={style.containerCards}>
+
+                            <TransitionGroup className={style.container} enter={true} exit={true}>
                                 {workItems}
-                            </Fade>
-                        </div>
+                            </TransitionGroup>
+
 
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import style from './Header.module.css'
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 class Header extends Component {
     render() {
@@ -19,7 +19,7 @@ class Header extends Component {
                               offset={-70}
                               duration= {1500}
                               className={style.link}>ABOUT</Link>
-                        <Link to="skills"activeClass={style.linkActive}
+                        <Link to="skills" activeClass={style.linkActive}
                               spy={true}
                               smooth={true}
                               offset={-70}
